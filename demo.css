@@ -124,7 +124,7 @@ img{
    width: 1200px; 
 }
   .bottom{
-      margin-top: 10px;
+    margin-top: 10px;
      
     height: 1200px;
     width: 1200px;
@@ -204,6 +204,9 @@ img{
     font-weight: 700;
     font-family: "Helvetica Neue",Arial,"Lucida Grande",STHeiti,sans-serif;
 
+}
+.he{
+    margin-top: 40px;
 }
 
 
