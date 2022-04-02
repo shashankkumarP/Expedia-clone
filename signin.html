@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #main{
+    height: 50px;
+    width: 98%;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    margin:auto
+
+}
+#main>img{
+    height: 80%;
+    padding-left: 40%;
+}
+.signin{
+    
+    width: 30%;
+   
+    margin: auto;
+    margin-top: 30px;
+    
+}
+.signin>.in1{
+    height: 40px;
+    width: 90%;
+    border-radius: 7px;
+    margin-bottom: 20px;
+}
+.signin>.in4{
+    height: 40px;
+    width: 90%;
+    border-radius: 7px;
+    margin-bottom: 20px;
+}
+.check{
+    height: 20px;
+    width: 20px;
+    padding-top: 5px;
+}
+#p1{
+    font-size: 15px;
+}
+a{
+    color:blue
+}
+a:hover{
+    cursor: pointer;
+}
+.submit{
+    height: 46px;
+    width: 92%;
+    border-radius: 8px;
+    background-color: blue;
+    color: aliceblue;
+    font-size: 20px;
+    
+}
+.last{
+    
+    
+    
+    margin: auto;
+    margin-top: 40px;
+}
+p{
+    text-align: center;
+}
+.last>.p2{
+    text-align: center;
+}
+.last>img{
+    height: 20px;
+    width: 20px;
+    
+}
+.last>img:hover{
+    cursor: pointer;
+}
+.img1{
+    padding-left: 700px;
+}
+.img2{
+    margin-left: 9px;
+}
+    </style>
+</head>
+<body>
+    <div id="main">
+        <img src="https://www.expedia.com/_dms/interstitial/logo.svg?locale=en_US&siteid=1" />
+        
+    </body>
+    <form>
+        <div class="signin">
+        <input class="in1" type="text" placeholder="Email address">
+        <input class="in4" type="password" placeholder="Password">
+        <br>
+        <input class="check" type="checkbox"  >This is a public or shared device
+        <p id="p1">By signing in, I agree to the Expedia <span><a>Terms and Conditions,</a> </span><span><a>Privacy Statement</a></a></span> and <span><a>Expedia Rewards Terms and Condition</a></span></p>
+        <input class="submit" type="submit" value="Login">
+
+
+
+    </div>
+    </form>
+    <div class="last">
+        <p><a>Forgot password?</a></p>
+        <p>Don't have an account? <a href="signup.html">Create one</a> </p>
+        <p class="p2">or continue with</p>
+        <img class="img1" src="https://a.travel-assets.com/egds/marks/apple.svg" />
+        <img  class="img2" src="https://a.travel-assets.com/egds/marks/facebook.svg" />
+        <img class="img2" src="https://a.travel-assets.com/egds/marks/google.svg" />
+  
+    </div>
+</html>
+
+<script>
+    var data=JSON.parse(localStorage.getItem("signin"))
+document.querySelector("form").addEventListener("submit",myFun)
+
+
+function myFun(){
+    event.preventDefault()
+    var mail=document.querySelector(".in1").value;
+    var password=document.querySelector(".in4").value;
+    
+    for(var i=0;i<data.length;i++){
+        if(data[i].email==mail&&data[i].password==password){
+            window.location.href="group_alok.html"
+            break;
+        }
+        else{
+            alert("incorrect password or userid");
+        }
+    }
+   
+}
+
+
+</script>

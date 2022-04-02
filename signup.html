@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+#main{
+    height: 50px;
+    width: 98%;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    margin:auto
+
+}
+#main>img{
+    height: 80%;
+    padding-left: 40%;
+}
+  
+.signin{
+    
+    width: 30%;
+   
+    margin: auto;
+    margin-top: 30px;
+    
+}
+.signin>p{
+    font-size: 40px;
+    
+}
+.signin>.in1{
+    height: 40px;
+    width: 90%;
+    border-radius: 7px;
+    margin-bottom: 20px;
+}
+.signin>.in2{
+    height: 40px;
+    width: 90%;
+    border-radius: 7px;
+    margin-bottom: 20px;
+}
+.signin>.in3{
+    height: 40px;
+    width: 90%;
+    border-radius: 7px;
+    margin-bottom: 20px;
+}
+.signin>.in4{
+    height: 40px;
+    width: 90%;
+    border-radius: 7px;
+    margin-bottom: 20px;
+}
+#checkbox{
+    padding-right: 90px;
+}
+.check{
+    height: 20px;
+    width: 20px;
+    padding-top: 5px;
+}
+#p1{
+    font-size: 15px;
+}
+a{
+    color:blue
+}
+a:hover{
+    cursor: pointer;
+}
+.submit{
+    height: 46px;
+    width: 92%;
+    border-radius: 8px;
+    background-color: blue;
+    color: aliceblue;
+    font-size: 20px;
+    
+}
+.last{
+
+    width: 250px;
+    
+    margin: auto;
+}
+.last>p{
+    text-align: center;
+}
+.last>img{
+    height: 20px;
+    width: 20px;
+    padding-left: 50px;
+}
+.last>img:hover{
+    cursor: pointer;
+}
+    </style>
+</head>
+<body>
+    <div id="main">
+        <img src="https://www.expedia.com/_dms/interstitial/logo.svg?locale=en_US&siteid=1" /
+
+    </div>
+    <form >
+    <div class="signin">
+        <p>Create an account</p>
+        <input class="in1" type="text" placeholder="Email address">
+        <input class="in2" type="text" placeholder="First name"><input class="in3" type="text" placeholder="Last name"><input class="in4" type="password" placeholder="Password">
+        <br>
+          
+        <input class="check" type="checkbox"  >This is a public or shared device
+        <p id="p1">By creating an account, I agree to the Expedia <span><a>Terms and Conditions,</a> </span><span><a>Privacy Statement</a></a></span> and <span><a>Expedia Rewards Terms and Condition</a></span></p>
+         <input class="submit" type="submit" value="Continue">
+    </div>
+    
+</form>
+  <div class="last">
+      <p>Already have an account? <span><a href="signin.html" >Sign in</a></span></p>
+      <p>or continue with</p>
+      <img src="https://a.travel-assets.com/egds/marks/apple.svg" />
+      <img src="https://a.travel-assets.com/egds/marks/facebook.svg" />
+      <img src="https://a.travel-assets.com/egds/marks/google.svg" />
+
+  </div>
+</body>
+</html>
+<script>
+
+document.querySelector("form").addEventListener("submit",myFun)
+var signin=JSON.parse(localStorage.getItem("signin"))||[]
+
+function myFun(){
+    event.preventDefault()
+
+    var obj={
+        email:document.querySelector(".in1").value,
+        first_name:document.querySelector(".in2").value,
+        last_name:document.querySelector(".in3").value,
+        password:document.querySelector(".in4").value,
+    }
+    signin.push(obj);
+    localStorage.setItem("signin",JSON.stringify(signin))
+    window.location.reload()
+    
+}
+
+
+</script>
