@@ -1,0 +1,213 @@
+img{
+    height: 30px;
+
+}
+/* body {
+    padding-top: 0px;
+    line-height: 1px;
+} */
+
+#mynormal{
+    
+  
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    justify-content: space-between;
+}
+#mynormal:hover{
+    cursor: pointer;
+    color: blue;
+}
+
+
+#modal-container{
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 20%;
+    top: 10%;
+    width: 20%; /* Full width */
+    height: 30%; 
+    overflow: auto; 
+  
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+   
+
+}
+#div11{
+    display: flex;
+    height: 100%;
+    width: 27%;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 100px;
+
+}
+#div1{
+    display: flex;
+    
+    height: 70px;
+    width: 100%;
+  
+    justify-content: space-between;
+ 
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+
+    
+}
+
+#div12{
+    display: flex;
+    width: 30%;
+    height: 100%;
+    align-items: center;
+}
+#div12>div{
+    margin-left: 30px;
+}
+
+.container2{
+    margin-top: 10px;
+    
+    display: flex;
+    height: 80px;
+    width: 100%;
+    background-image: url("happy1.jpg");
+    background-size: 100%;
+    object-fit: cover;
+    /* background-image:  url("happy1.jpg"); */
+    align-items: center;
+    position: absolute;
+    
+  }
+  .cust{
+    
+      margin-left: 120px;
+      font-size: 30px;
+      color:#ffffff ;
+      font-family: 'Times New Roman', Times, serif;
+  }
+  .under{
+     margin-left:230px ;
+  }
+  .weare{
+      
+      width: 100%;
+      height: 100px;
+  }
+  .weare2{
+    
+    width: 100%;
+    height: 100px;
+    margin-top: 10px;
+  }
+  .sabsebadadiv{
+    border: 1px solid pink;
+    margin-left:400px;
+    margin-top:-350px;
+    height: auto;
+    width: 800px;
+  }
+  /*---------*/
+  .lat{
+    box-sizing: border-box;
+  }
+  .middle{
+      
+      height: 250px;
+      width: 1200px;
+      margin-left: 120px;
+  }
+  .middle>img{
+   height: 250px;
+   width: 1200px; 
+}
+  .bottom{
+      margin-top: 10px;
+      
+    height: 1200px;
+    width: 1200px;
+    margin-left: 120px; 
+    
+  }
+
+  .head1{
+      margin-left: 10px;
+  }
+  .pera1{
+      margin-left: 300px;
+      margin-top: -40px;
+  }
+  .he>img{
+    margin-left: 550px; width: 300px;height: 100px; 
+    
+  }
+  /*----------*/
+
+
+  /*----------------------faq------------------------*/
+  *{
+    margin: 0;
+    padding: 0;
+    font-family: 'Ubuntu',sans-serif;
+
+}
+#faqs{
+    background-color:#dbe5e6 ;
+    height: 60%;
+    padding: 50px 0;
+}
+
+#faqs h1 {
+    font-weight: 900;
+    font-size: 34px;
+    text-align: center;
+    padding: 20px 0 50px 0;
+}
+.accordion .card {
+    border-radius: 0;
+    background: none;
+    border-left-width: 0 ;
+    border-right-width: 0;
+}
+.accordion .card .card-header{
+    background: none;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    border-radius: 0;
+}
+.accordion .card-header h2{
+    font-size: 1rem;
+}
+.accordion .card-header .btn{
+    color: #0c7f90;
+    width: 100%;
+    text-align: left;
+    padding-left:0;
+    padding-right: 0;
+}
+.accordion .card-header i{
+    font-size: 1.3rem;
+    position: absolute;
+    top: 15px;
+    right: 1rem;
+}
+.accordion .card-body{
+    color: #666;
+
+}
+.card-header {
+    color: #0065b8;
+    font-size: 17px;
+    line-height: 24px;
+    font-weight: 700;
+    font-family: "Helvetica Neue",Arial,"Lucida Grande",STHeiti,sans-serif;
+
+}
+
+
+
+
+  /*------------------------faq end--------------*/
+
