@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+.top_div{
+    height: 80px;
+    width: 100%;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    display: flex;
+}
+.div1{
+    height: 100%;
+    width: 10%;
+  
+    margin-left: 200px;
+}
+.div1>img{
+    margin-top: 20px;
+}
+.div2{
+    height: 100%;
+    width: 10%;
+    margin-left: 10px;
+}
+.div2>select{
+    margin-top: 25px;
+    border: 0.5px;
+    width: 90px;
+}
+.div2>select:hover{
+    color: blue;
+    cursor: pointer;
+}
+.div3{
+    height: 100%;
+    width: 10%;
+
+    margin-left: 21%;
+    display: flex;
+}
+.div3>span>img{
+    height: 22px;
+    width: 22px;
+    margin-top: 22px;
+}
+.indiv{
+    height: 100%;
+    width: 60%;
+}
+.indiv>p{
+    margin-top: 22px;
+}
+.div4{
+    height: 100%;
+    width: 10%;
+   
+
+    margin-left: 40px;
+}
+.div5{
+    height: 100%;
+    width: 10%;
+   
+}
+.di5>p{
+    margin-top: 20px;
+}
+.div4>p{
+    margin-top: 20px;
+}
+.div6{
+    height: 100%;
+    width: 10%;
+   
+}
+.div6>p{
+    margin-top: 20px;
+}
+
+a{
+    text-decoration: none;
+    color:black
+}
+a:hover{
+    color:blue
+}
+.p1:hover{
+    color:blue;
+    cursor: pointer;
+    
+}
+#maindiv{
+    
+    width:77%;
+  
+    margin: auto;
+    background-image: url("bridge.jpg");
+    display: flex;
+}
+.main1{
+    
+    width: 25%;
+  
+    margin-top: 80px;
+    margin-left: 46px;
+}
+.main1>img{
+    height: 100%;
+    width: 100%;
+}
+.main2{
+    
+    width: 60%;
+
+    margin-top: 190px;
+    margin-left: 80px;
+}
+.main2-1{
+    
+    width: 99%;
+    
+}
+.main2-1>.pp{
+    color:aliceblue;
+    font-size: 38px;
+    margin-left: 10%;
+}
+.pp1{
+    margin-bottom: 30px;
+    color: aliceblue;
+}
+.sp{
+    color:#edc80b
+}
+.sp:hover{
+    cursor: pointer;
+}
+.in2{
+     height: 20%;
+    width: 85%;
+    
+    display: flex;
+}
+.in21{
+    height: 80%;
+    width: 15%;
+ 
+}
+.in22{
+    height: 100%;
+    width: 90%;
+
+    margin-left: 10px;
+}
+.in22>p{
+    color: aliceblue;
+}
+.aap{
+    
+    width: 58%;
+    
+    display: flex;
+}
+.aap>p{
+    color: aliceblue;
+    font-size: 20px;
+}
+.sc{
+    width: 62%;
+    
+    display: flex;
+}
+.sc>.scd{
+    height: 100%;
+    width:30%;
+    
+    margin-right: 10px;
+}
+.lastdiv{
+    height: 13%;
+    width: 60%;
+    
+    display: flex;
+}
+.lastdiv>.last1{
+    height: 100%;
+    width: 20%;
+  
+}
+.last1>img{
+    height: 100%;
+    width: 100%;
+}
+.last2{
+    height: 100%;
+    width: 80%;
+    margin-left: 10px;
+  
+}
+.last2>p{
+    color:white
+}
+.part2{
+    
+    width: 77%;
+  
+    margin: auto;
+    background-color: 
+#ffc94c;
+}
+.part2>.part2-1{
+    height: 100px;
+    width: 80%;
+  
+    display: flex;
+}
+.part2-1-1{
+    height: 80%;
+    width: 40%;
+   
+}
+.part2-1-1>p{
+    margin-left: 10px;
+    font-size: 19px;
+}
+.part2-1-2{
+    height: 100%;
+    width: 57%;
+
+}
+.in1{
+    height: 45px;
+    width: 60%;
+}
+button{
+    height: 46px;
+    width: 20%;
+    background-color: blue;
+    color: aliceblue;
+    border: .5px;
+    border-radius: 6px;
+    font-size: 20px;
+}
+.part2>p{
+    margin-left: 10px;
+}
+.booking{
+    
+    width: 77%;
+   
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2,auto);
+}
+.booking>div{
+   
+}
+.bp-1{
+    font-size: 20px;
+    font-weight: bolder;
+    margin-left: 10px;
+}
+.bp-1+p{
+    color: grey;
+    margin-left: 10px;
+}
+.flight{
+    height: 600px;
+    width: 77%;
+    margin: auto;
+   
+    background-image: url("apppage_newtablet_bg2_1176x662.jpg");
+    display: flex;
+}
+.f-1{
+    
+    width: 40%;
+
+    margin-left: 40px;
+    margin-top: 30px;
+}
+.f-1-p{
+    color: aliceblue;
+    font-size: 35px;
+    font-weight: bolder;
+}.f-1>ul{
+    color: aliceblue;
+    font-size: 20px;
+}
+.f-2{
+    width: 40%;
+    height: 40%;
+   
+    margin-left: 50px;
+    margin-top: 30px;
+}
+.f-2>img{
+    height: 100%;
+    width: 100%;
+}
+.f{
+height: 600px;
+width: 77%;
+    margin: auto;
+   
+    background-image: url("h.jpg");
+    display: flex;
+}
+.f-11{
+    height: 240px;
+    width: 40%;
+  
+    margin-top: 28%;
+    margin-left: 28px;
+}
+.f-11-p{
+    color:aliceblue;
+    font-size: 20px;
+}
+.f-11-p2{
+font-size: 40px;
+color: aliceblue;
+font-weight: bolder;
+}
+.f-11-p3{
+    font-size: 17px;
+    color: aliceblue;
+}
+.ff{
+    height: 80%;
+    width: 300px;
+   
+    margin-top: 60px;
+    margin-left: 300px;
+}
+.ff>img{
+    height: 100%;
+    width: 100%;
+}
+.f-3{
+    height: 620px;
+    width: 77%;
+   
+    margin: auto;
+    background-image: url("hero_3_1176x662.jpg");
+    display: flex;
+}
+.f-4{
+    height: 620px;
+    width: 77%;
+   
+    margin: auto;
+    background-image: url("hero.jpg");
+    display: flex;
+
+}
+.fff{
+    height: 90%;
+    width: 450px;
+  
+    margin-top: 60px;
+    margin-left: 300px;
+}
+.fff>img{
+    height: 100%;
+    width: 100%;
+}
+.all{
+    
+    width: 77%;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    margin: auto;
+}
+.all-p{
+    font-size: 26px;
+    font-weight: bolder;
+    padding-left: 10px;
+    padding-top: 20px;
+}
+.all-pp{
+    padding-left: 10px;
+    padding-top: 20px;
+    color: grey;
+    font-size: 20px;
+}
+.a-mob{
+    display: flex;
+    height: 250px;
+    width: 89%;
+  
+    margin-left: 30px;
+}
+.mob1{
+    height: 98%;
+    width: 15%;
+  
+    margin-top: 5px;
+}
+.mob1>img{
+    height: 100%;
+    width: 100%;
+}
+.mob2{
+    height: 98%;
+    width: 15%;
+  
+    margin-top: 5px;
+    margin-left: 70px;
+}
+.mob2>img{
+    height: 100%;
+    width: 100%;
+}
+.mob3{
+    height: 98%;
+    width: 23%;
+  
+    margin-top: 5px;
+    margin-left: 70px;
+}
+.mob3>img{
+    height: 100%;
+    width: 100%;
+}
+.scan{
+    height: 80px;
+  
+    margin-left: 30px;
+    display: flex;
+}
+.sc1{
+    height: 100%;
+    width: 20%;
+  
+}
+.sc1>p{
+    font-size: 18px;
+    font-weight: bold;
+}
+.sc2{
+    height: 80%;
+    width: 17%;
+ 
+    margin-top: 10px;
+    margin-left: 10px;
+}
+.sc3{
+    font-weight: bold;
+}
+.sc4{
+    height: 80%;
+    width: 10%;
+}
+.sc4>img{
+    height: 100%;
+    width: 100%;
+}
+.flag{
+    height: 500px;
+    width: 60%;
+  
+    margin: auto;
+}
+.flag>img{
+    height: 100%;
+    width: 100%;
+}
+    </style>
+</head>
+<body>
+    <div class="top_div">
+        <div class="div1">
+            <img class="p1"src="https://www.expedia.co.in/_dms/header/logo.svg?locale=en_GB&siteid=27" />
+        </div>
+        <div class="div2">
+            <select >
+                <option value="More travel">More travel</option>
+                <option value="Hotels">Hotels</option>
+                <option value="Flights">Flights</option>
+                <option value="Cars">Cars</option>
+                <option value="Holiday packages">Holiday Packages</option>
+                <option value="Holiday activities">Holiday activities</option>
+                <option value="Deals">Deals</option>
+                <option value="Groups and meetings">Groups and meetings</option>
+            </select>
+        </div>
+        <div class="div3">
+          <span> <img src="https://tse2.mm.bing.net/th?id=OIP.lq3qtnHD6qPes1ugV-U_GgHaHp&pid=Api&P=0&w=157&h=162" /></span>
+          <div class="indiv">
+              <p class="p1">English</p>
+          </div>
+        </div>
+        <div class="div4">
+            <p class="p1">support</p>
+        </div>
+        <div class="div5">
+            <p class="p1">Trips</p>
+        </div>
+        <div class="div6">
+            <p><a href="signin.html">Sign in</a> </p>
+        </div>
+    </div>
+    <div id="maindiv">
+        <div class="main1">
+            <img src="phone.png" />
+        </div>
+        <div class="main2">
+            <div class="main2-1">
+                <p class="pp">Double Points on Mobile Bookings</p>
+                <p class="pp1">Get the free Expedia App and earn double Expedia Rewards points on your mobile bookings, see real-time trip updates, and book from anywhere, anytime. <span class="sp">See Details.</span></p>
+
+            </div>
+            <div class="in2">
+                <div class="in21">
+                    <img src="logo_webbyawards_86x48.png" />
+                </div>
+                <div class="in22">
+                    <p>Winner of the 2016 People's Voice Award</p>
+                    <p>"…friendly and modern, with subtle innovations that make it a joy to use."—PC Magazine</p>
+                </div>
+            </div>
+            <div class="aap">
+                <p>Expedia App Now Available On:</p>
+            </div>
+            <div class="sc">
+                <div class="scd">
+                    <img src="download_on_the_app_store_badge_en_GB_135x40.png" />
+                </div>
+                <div>
+                    <img src="android_button_en_GB.png" />
+                </div>
+            </div>
+            <div class="lastdiv">
+                <div class="last1">
+                    <img src="scanner.png" />
+                </div>
+                <div class="last2">
+                    <p>Scan the QR Code to Download the Expedia App</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="part2">
+        <div class="part2-1">
+            <div class="part2-1-1">
+                <p>Send a download link to your mobile device.</p>
+            </div>
+            <div class="part2-1-2">
+                <p style="color: grey;">Phone number</p>
+                <input class="in1" type="number" placeholder="enter number">
+                <button>Send</button>
+            </div>
+        </div>
+        <p>By providing your number, you agree to receive a one-time automated text message with a link to get the app. Standard text message rates may apply.</p>
+
+    </div>
+    <div class="booking">
+        <div>
+            <p class="bp-1">Book Flights & Hotels Anywhere</p>
+            <p>Search over 400 airlines and more than 500,000 hotels, plus read over 11 million reviews.</p>
+        </div>
+        <div>
+            <p class="bp-1">Get Mobile-Exclusive Deals</p>
+            <p class="bp1+p">Save up to 40% on hotels—deals you’ll only see on the Expedia App.</p>
+        </div>
+        <div>
+            <p class="bp-1">Track Flights & Itineraries</p>
+            <p class="bp-1+p">Receive immediate trip updates, from gate numbers to flight delays.</p>
+        </div>
+        <div>
+            <p class="bp-1">Earn Expedia® Rewards points</p>
+            <p class="bp-1+p">Earn points on your mobile booking, and get instant Expedia Rewards member recognition.</p>
+        </div>
+    </div>
+    <div class="flight">
+        <div class="f-1">
+            <p class="f-1-p">Introducing the New Expedia Tablet App</p>
+            <ul>
+                <li>Start with one simple search. Where are you going?</li>
+                <li>Search hotels and flights side by side.</li>
+                <li>Get inspired: browse our curated travel collections and discover new destinations.</li>
+            </ul>
+        </div>
+        <div class="f-2">
+            <img src="androidtablet_en_gb_360x260.png" />
+        </div>
+    </div>
+    <div class="f">
+        <div class="f-11">
+            <p class="f-11-p">Flights</p>
+            <p class="f-11-p2">Fly Wherever, Whenever</p>
+            <p class="f-11-p3">The Expedia App is a flight app. Find and book your flight with a few simple swipes. All you have to do is choose your departure date and your arrival city.</p>
+        
+        
+        </div>
+        <div class="ff">
+            <img src="flight_android_en_gb.png" />
+        </div>
+    </div>
+    <div class="f-3">
+        <div class="f-11">
+        <p class="f-11-p">Hotels</p>
+        <p class="f-11-p2">Discover Your Home Away from Home</p>
+        <p class="f-11-p3">The Expedia App is a hotel app, too. Sort hotels by deals, price, ratings and more—or find a nearby hotel on the map. Read guest reviews, and save your billing data for instant checkout.</p>
+        
+    
+    </div>
+    <div class="ff">
+        <img src="ipad_en_gb_350x260.png" />
+    </div>
+    </div>
+    <div class="f-4">
+        <div class="f-11">
+            <p class="f-11-p">Trips</p>
+            <p class="f-11-p2">Manage Your Itinerary</p>
+            <p class="f-11-p3">The Expedia App is a vacation app. Access your itinerary immediately. Receive instant trip updates, from gate changes to baggage carousel numbers.</p>
+        </div>
+        <div class="fff">
+            <img src="hero_iphone5s_hand_en_gb_470x640.png" />
+        </div>
+    </div>
+    <div class="all">
+        <div class="all-1">
+            <p class="all-p" >For Every Device, Everywhere</p>
+            <p class="all-pp">Download our travel app on iPhone, Android, iPad, and most tablets.</p>
+        </div>
+        <div class="a-mob">
+            <div class="mob1">
+                <img src="iphone5s_en_gb_104x260 (1).png" />
+            </div>
+            <div class="mob2">
+                <img src="flight_android_en_gb (1).png" />
+            </div>
+            <div class="mob3">
+                <img src="ipad_en_gb_350x260 (1).png" />
+            </div>
+            <div class="mob3">
+                <img src="androidtablet_en_gb_360x260 (1).png" />
+            </div>
+        </div>
+        <div class="scan">
+            <div class="sc1">
+                <p>Get the Expedia App:</p>
+            </div>
+            <div class="sc2">
+                <img src="download_on_the_app_store_badge_en_GB_135x40 (1).png" />
+            </div>
+            <div class="sc2">
+                <img src="android_button_en_GB (1).png" />
+            </div>
+            <div class="sc3">
+                <p>Scan the QR Code to Download the App:</p>
+            </div>
+            <div class="sc4"><img src="27 (1).png" /></div>
+        </div>
+    </div>
+</body>
+</html>
