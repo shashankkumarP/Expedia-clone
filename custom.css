@@ -1,0 +1,10 @@
+.dropdown-menu{
+    width: 350px !important;
+    height: 350px !important;
+    margin-right: 30px !important;
+    
+}
+#div12 .dropdown-menu{
+    width: 350px !important;
+    height: 280px !important;
+}
