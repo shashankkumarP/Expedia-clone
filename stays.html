@@ -279,7 +279,9 @@ margin:auto;
           width:90%;
           margin: auto;
         }
-        
+        .expedia:hover{
+          cursor: pointer;
+        }
     
     </style>
    
@@ -1242,6 +1244,10 @@ document.querySelector("#tp1").style.display="block";
 </body>
 </html>
 <script>
+   document.querySelector(".expedia").addEventListener("click",mm22)
+    function mm22(){
+        window.location.href="homepage_shashank.html"
+    }
   var x = document.querySelector("#x")
   document.addEventListener("mouseup",function(event){
       if(event.target ==x) document.querySelector("#modal").style.display="none";
