@@ -1,0 +1,1255 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <script
+      src="https://kit.fontawesome.com/24c494a6b6.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script><ins class="adsbygoogle" ... data-matched-content-ui-type="SomethingHere"></ins> -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> 
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> -->
+  <!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script> -->
+<!-- <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script> -->
+<!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script> -->
+<link rel="stylesheet" type="text/css" href="custom.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/fontawesome.min.css">
+<script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
+   
+   <style>
+
+/* shashank upperpage */
+
+#tab_panel{
+
+  text-align:left;
+}
+
+.mod1{
+        display: flex;
+        width: 100%;
+        height: 50px;
+        z-index: 1000;
+        text-align: center;
+        align-items: center;
+        font-size: bold;
+        padding-left: 25px;
+      
+    }
+    
+    .mod1>p:first-child{
+        font-size: large;
+        padding-right: 15px;
+        color: blue;
+    }
+    .mod2{
+        display: flex;
+        width: 100%;
+        height: 60px;
+        padding-left: 15px;
+        justify-content: space-around;
+        align-items: center;
+        background-color: rgb(7, 7, 112);
+        color: white;
+        
+    }
+    .mod2>p:first-child{
+       
+       
+        font-family: fontawesome;
+     
+      
+       
+    }
+    .mod3{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20px;
+    }
+    .mod3>select{
+        height: 50px;
+        width: 80%;
+        margin-top: 25px;
+        border-radius: 7px;
+        white-space: pre;
+    }
+    .mod3>button{
+        height: 50px;
+        width: 80%;
+        border-radius:7px;
+        margin-top: 80px;
+        background-color: blue;
+        color: white;
+    }
+    #eng{
+        text-decoration: none;
+    }
+    #eng:hover{
+        cursor: pointer;
+    }
+    .english,.tips,.support,.staytab,.img1button,.flighttab,.cut,.img1link:hover{
+        cursor: pointer;
+    }
+ #modal{
+        display: none;
+        position: absolute;
+        left: 35%;
+        top:6%;
+        z-index: 1000;
+        width: 575px;
+        height: 500px;
+        border: 1px solid;
+        /* margin: auto; */
+        /* margin-top: 10px; */
+        background-color: #fff;
+        background-clip: padding-box;
+        border: 1px solid rgba(0,0,0,.15);
+        list-style: none;
+        border-radius: 0.25rem;
+
+    }
+.im{
+        width: 15px;
+        height: 10px;
+        margin-right: 7px;
+    }
+    .i1{
+        width: 18px;
+        height: 22px;
+    }
+    .ii{
+        width: 20px;
+        height: 20px;
+        
+    }
+ .im{
+        width: 15px;
+        height: 10px;
+        margin-right: 7px;
+    }
+#div12{
+        display: flex;
+        width: 30%;
+        height: 100%;
+        align-items: center;
+    }
+    #div12>div{
+        margin-left: 30px;
+    }
+    #div2{
+        height: 250px;
+        width: 90%;
+        box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+        margin: auto;
+        margin-top: 50px;
+     
+    }
+#div11{
+        display: flex;
+        height: 100%;
+        width: 27%;
+        justify-content: space-between;
+        align-items: center;
+        padding-left: 100px;
+
+    }
+    #div1{
+        display: flex;
+        /* margin: auto; */
+        height: 70px;
+        width: 100%;
+        /* margin: auto; */
+        justify-content: space-between;
+        /* margin-top: 15px; */
+        box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    
+        
+    }
+ #mynormal{
+        
+      
+        display: flex;
+        align-items: center;
+        font-weight: bold;
+        justify-content: space-between;
+    }
+    #mynormal:hover{
+        cursor: pointer;
+        color: blue;
+    }
+
+     /* shashank upperpage */
+      
+      #main{
+width:80%;
+margin:auto;
+      }
+         
+        
+    
+        #mamu{
+          height:350px;
+          width:100%;
+          
+          display:flex;
+          padding-bottom: 30px;
+          
+        }
+        #ram{
+          height:50px;
+          width:150px;
+          background-color: blue;
+          margin-top: 20px;
+          border-radius: 8px;
+          font-size:40px ;
+           
+        }
+        #mamu>div{
+          margin:10px;
+        }
+        #backimg{
+          background-image: url("https://a.travel-assets.com/travel-assets-manager/gmvd-1482-bookearly-emea/667x320.jpg");
+          
+          height:250px;
+           margin-bottom: 10px;
+           background-size: 100%;
+          width:100%;
+        
+        
+        }
+        #mobileimg{
+          height: 300px;
+          width: 100%;
+          box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+          border-radius: 6px;
+          border-radius: 8px;
+          display:flex;
+          padding-right: 10px;
+        }
+        #scrool{
+         height:250px;
+         width:100%;
+         box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+         border-radius: 6px;
+         display:flex;
+         overflow: scroll;
+        }
+        #scrool>div{
+          height:100%;
+          width:50%;
+          
+        
+
+        }
+        #last{
+          height:350px;
+         width:100%;
+         
+         display:flex;
+        }
+        #last>div{
+          height:350px;
+         width:20%;
+         
+        }
+        #limage>div{
+              justify-content: center;
+        }
+
+        a{
+          text-decoration: none;
+
+        }
+        a:hover{
+          text-decoration: underline;
+        }
+
+        #boss{
+          height:100%;
+          width:90%;
+          margin: auto;
+        }
+        
+    
+    </style>
+   
+
+
+  <body>
+    <div id="boss">
+    <!-- shashank -->
+    <div id="div1">
+      <div id="div11">
+          <img class="expedia" src="https://www.expedia.co.in/_dms/header/logo.svg?locale=en_GB&siteid=27&2">
+          <div class="container">
+              <div class="dropdown dropleft">
+                <div  type="button" data-toggle="dropdown" id="mynormal">More travel  <i class="fa-solid fa-chevron-down"></i><span ></span></div>
+                <ul class="dropdown-menu dropdown-menu-left">
+                  <li><a href="#"> <img class="i1" src="https://static.vecteezy.com/system/resources/thumbnails/000/353/557/small/Office__2871_29.jpg" alt=""> Stays</a></li>
+                  <li class="divider"></li>
+                  <li><a href="#"><img class="im" src="https://cdn4.iconfinder.com/data/icons/aiga-symbol-signs/444/aiga_departingflights-512.png">Flight</a></li>
+                  <li class="divider"></li>
+                  <li><a href="#"><img class="ii" src="https://upload.wikimedia.org/wikipedia/commons/5/5a/Car_icon_alone.png" alt="">  Car</a></li>
+                  <li class="divider"></li>
+                  <li><a href="#"><img class="ii" src="https://cdn.iconscout.com/icon/premium/png-256-thumb/travel-luggage-1887232-1599427.png" alt="">  Package</a></li>
+                  <li class="divider"></li>
+                  <li><a href="#"><img class="i1" src="https://flyclipart.com/thumb2/ticket-icons-noun-project-411555.png" /> Holiday activities</a></li>
+                  <li class="divider"></li>
+                  <li><a href="#">Deals</a></li>
+                  <li><a href="#">Group and Meetings</a></li>
+                  <li><a href="#">Mobiles</a></li>
+                </ul>
+              </div>
+          </div>
+      </div>
+      
+
+      <div id="div12" >
+          <div id="eng"class="english"><i class="fa-solid fa-globe"></i> English</div>
+          <div class="support">support</div>
+          <div class="tips">Trips</div>
+          <div class="btn-group dropdown">
+              <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" id="wh">Signin</button>
+              <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenu2" data-size="50">
+                  <h4 class="dropdown-item" id="side">Members can access discounts and <br> special features</h4>
+                  <button class="dropdown-item" type="button" id="side1">Signin</button>
+                  <p class="dropdown-item" id="side11" >Create a free account</p>
+                  <h6 class="dropdown-item" id="side" >List of favourates</h6>
+                  <h6 class="dropdown-item" id="side" >Expedia Rewards</h6>
+                  <li class="divider"></li>
+                  <h6 class="dropdown-item" id="side" >Feedback</h6>
+
+                  
+              </div>
+              
+          </div>
+          
+          
+      </div>
+  </div>
+  <div id="modal" >
+      <div class="modalcontainent">
+          <div class="mod1">
+              <p class="cut" id="x">x</p>
+              <p>Display setting</p>
+          </div>
+          <div class="mod2">
+              <p>&#xf06a;</p>
+              <p>You can only access your trip information and Expedia Rewards points from the <br> Expedia site you booked on.</p>
+          </div>
+          <div class="mod3">
+              <select >
+                  <option value="" style="word-wrap:break-word">Region India</option>
+                  <option value="Afganistan">Afghanistan</option>
+                  <option value="Albania">Albania</option>
+                  <option value="Algeria">Algeria</option>
+                  <option value="American Samoa">American Samoa</option>
+                  <option value="Andorra">Andorra</option>
+                  <option value="Angola">Angola</option>
+                  <option value="Anguilla">Anguilla</option>
+                  <option value="Antigua & Barbuda">Antigua & Barbuda</option>
+                  <option value="Argentina">Argentina</option>
+                  <option value="Armenia">Armenia</option>
+                  <option value="Aruba">Aruba</option>
+                  <option value="Australia">Australia</option>
+                  <option value="Austria">Austria</option>
+                  <option value="Azerbaijan">Azerbaijan</option>
+                  <option value="Bahamas">Bahamas</option>
+                  <option value="Bahrain">Bahrain</option>
+                  <option value="Bangladesh">Bangladesh</option>
+                  <option value="Barbados">Barbados</option>
+                  <option value="Belarus">Belarus</option>
+                  <option value="Belgium">Belgium</option>
+                  <option value="Belize">Belize</option>
+                  <option value="Benin">Benin</option>
+                  <option value="Bermuda">Bermuda</option>
+                  <option value="Bhutan">Bhutan</option>
+                  <option value="Bolivia">Bolivia</option>
+                  <option value="Bonaire">Bonaire</option>
+                  <option value="Bosnia & Herzegovina">Bosnia & Herzegovina</option>
+                  <option value="Botswana">Botswana</option>
+                  <option value="Brazil">Brazil</option>
+                  <option value="British Indian Ocean Ter">British Indian Ocean Ter</option>
+                  <option value="Brunei">Brunei</option>
+                  <option value="Bulgaria">Bulgaria</option>
+                  <option value="Burkina Faso">Burkina Faso</option>
+                  <option value="Burundi">Burundi</option>
+                  <option value="Cambodia">Cambodia</option>
+                  <option value="Cameroon">Cameroon</option>
+                  <option value="Canada">Canada</option>
+                  <option value="Canary Islands">Canary Islands</option>
+                  <option value="Cape Verde">Cape Verde</option>
+                  <option value="Cayman Islands">Cayman Islands</option>
+                  <option value="Central African Republic">Central African Republic</option>
+                  <option value="Chad">Chad</option>
+                  <option value="Channel Islands">Channel Islands</option>
+                  <option value="Chile">Chile</option>
+                  <option value="China">China</option>
+                  <option value="Christmas Island">Christmas Island</option>
+                  <option value="Cocos Island">Cocos Island</option>
+                  <option value="Colombia">Colombia</option>
+                  <option value="Comoros">Comoros</option>
+                  <option value="Congo">Congo</option>
+                  <option value="Cook Islands">Cook Islands</option>
+                  <option value="Costa Rica">Costa Rica</option>
+                  <option value="Cote DIvoire">Cote DIvoire</option>
+                  <option value="Croatia">Croatia</option>
+                  <option value="Cuba">Cuba</option>
+                  <option value="Curaco">Curacao</option>
+                  <option value="Cyprus">Cyprus</option>
+                  <option value="Czech Republic">Czech Republic</option>
+                  <option value="Denmark">Denmark</option>
+                  <option value="Djibouti">Djibouti</option>
+                  <option value="Dominica">Dominica</option>
+                  <option value="Dominican Republic">Dominican Republic</option>
+                  <option value="East Timor">East Timor</option>
+                  <option value="Ecuador">Ecuador</option>
+                  <option value="Egypt">Egypt</option>
+                  <option value="El Salvador">El Salvador</option>
+                  <option value="Equatorial Guinea">Equatorial Guinea</option>
+                  <option value="Eritrea">Eritrea</option>
+                  <option value="Estonia">Estonia</option>
+                  <option value="Ethiopia">Ethiopia</option>
+                  <option value="Falkland Islands">Falkland Islands</option>
+                  <option value="Faroe Islands">Faroe Islands</option>
+                  <option value="Fiji">Fiji</option>
+                  <option value="Finland">Finland</option>
+                  <option value="France">France</option>
+                  <option value="French Guiana">French Guiana</option>
+                  <option value="French Polynesia">French Polynesia</option>
+                  <option value="French Southern Ter">French Southern Ter</option>
+                  <option value="Gabon">Gabon</option>
+                  <option value="Gambia">Gambia</option>
+                  <option value="Georgia">Georgia</option>
+                  <option value="Germany">Germany</option>
+                  <option value="Ghana">Ghana</option>
+                  <option value="Gibraltar">Gibraltar</option>
+                  <option value="Great Britain">Great Britain</option>
+                  <option value="Greece">Greece</option>
+                  <option value="Greenland">Greenland</option>
+                  <option value="Grenada">Grenada</option>
+                  <option value="Guadeloupe">Guadeloupe</option>
+                  <option value="Guam">Guam</option>
+                  <option value="Guatemala">Guatemala</option>
+                  <option value="Guinea">Guinea</option>
+                  <option value="Guyana">Guyana</option>
+                  <option value="Haiti">Haiti</option>
+                  <option value="Hawaii">Hawaii</option>
+                  <option value="Honduras">Honduras</option>
+                  <option value="Hong Kong">Hong Kong</option>
+                  <option value="Hungary">Hungary</option>
+                  <option value="Iceland">Iceland</option>
+                  <option value="Indonesia">Indonesia</option>
+                  <option value="India">India</option>
+                  <option value="Iran">Iran</option>
+                  <option value="Iraq">Iraq</option>
+                  <option value="Ireland">Ireland</option>
+                  <option value="Isle of Man">Isle of Man</option>
+                  <option value="Israel">Israel</option>
+                  <option value="Italy">Italy</option>
+                  <option value="Jamaica">Jamaica</option>
+                  <option value="Japan">Japan</option>
+                  <option value="Jordan">Jordan</option>
+                  <option value="Kazakhstan">Kazakhstan</option>
+                  <option value="Kenya">Kenya</option>
+                  <option value="Kiribati">Kiribati</option>
+                  <option value="Korea North">Korea North</option>
+                  <option value="Korea Sout">Korea South</option>
+                  <option value="Kuwait">Kuwait</option>
+                  <option value="Kyrgyzstan">Kyrgyzstan</option>
+                  <option value="Laos">Laos</option>
+                  <option value="Latvia">Latvia</option>
+                  <option value="Lebanon">Lebanon</option>
+                  <option value="Lesotho">Lesotho</option>
+                  <option value="Liberia">Liberia</option>
+                  <option value="Libya">Libya</option>
+                  <option value="Liechtenstein">Liechtenstein</option>
+                  <option value="Lithuania">Lithuania</option>
+                  <option value="Luxembourg">Luxembourg</option>
+                  <option value="Macau">Macau</option>
+                  <option value="Macedonia">Macedonia</option>
+                  <option value="Madagascar">Madagascar</option>
+                  <option value="Malaysia">Malaysia</option>
+                  <option value="Malawi">Malawi</option>
+                  <option value="Maldives">Maldives</option>
+                  <option value="Mali">Mali</option>
+                  <option value="Malta">Malta</option>
+                  <option value="Marshall Islands">Marshall Islands</option>
+                  <option value="Martinique">Martinique</option>
+                  <option value="Mauritania">Mauritania</option>
+                  <option value="Mauritius">Mauritius</option>
+                  <option value="Mayotte">Mayotte</option>
+                  <option value="Mexico">Mexico</option>
+                  <option value="Midway Islands">Midway Islands</option>
+                  <option value="Moldova">Moldova</option>
+                  <option value="Monaco">Monaco</option>
+                  <option value="Mongolia">Mongolia</option>
+                  <option value="Montserrat">Montserrat</option>
+                  <option value="Morocco">Morocco</option>
+                  <option value="Mozambique">Mozambique</option>
+                  <option value="Myanmar">Myanmar</option>
+                  <option value="Nambia">Nambia</option>
+                  <option value="Nauru">Nauru</option>
+                  <option value="Nepal">Nepal</option>
+                  <option value="Netherland Antilles">Netherland Antilles</option>
+                  <option value="Netherlands">Netherlands (Holland, Europe)</option>
+                  <option value="Nevis">Nevis</option>
+                  <option value="New Caledonia">New Caledonia</option>
+                  <option value="New Zealand">New Zealand</option>
+                  <option value="Nicaragua">Nicaragua</option>
+                  <option value="Niger">Niger</option>
+                  <option value="Nigeria">Nigeria</option>
+                  <option value="Niue">Niue</option>
+                  <option value="Norfolk Island">Norfolk Island</option>
+                  <option value="Norway">Norway</option>
+                  <option value="Oman">Oman</option>
+                  <option value="Pakistan">Pakistan</option>
+                  <option value="Palau Island">Palau Island</option>
+                  <option value="Palestine">Palestine</option>
+                  <option value="Panama">Panama</option>
+                  <option value="Papua New Guinea">Papua New Guinea</option>
+                  <option value="Paraguay">Paraguay</option>
+                  <option value="Peru">Peru</option>
+                  <option value="Phillipines">Philippines</option>
+                  <option value="Pitcairn Island">Pitcairn Island</option>
+                  <option value="Poland">Poland</option>
+                  <option value="Portugal">Portugal</option>
+                  <option value="Puerto Rico">Puerto Rico</option>
+                  <option value="Qatar">Qatar</option>
+                  <option value="Republic of Montenegro">Republic of Montenegro</option>
+                  <option value="Republic of Serbia">Republic of Serbia</option>
+                  <option value="Reunion">Reunion</option>
+                  <option value="Romania">Romania</option>
+                  <option value="Russia">Russia</option>
+                  <option value="Rwanda">Rwanda</option>
+                  <option value="St Barthelemy">St Barthelemy</option>
+                  <option value="St Eustatius">St Eustatius</option>
+                  <option value="St Helena">St Helena</option>
+                  <option value="St Kitts-Nevis">St Kitts-Nevis</option>
+                  <option value="St Lucia">St Lucia</option>
+                  <option value="St Maarten">St Maarten</option>
+                  <option value="St Pierre & Miquelon">St Pierre & Miquelon</option>
+                  <option value="St Vincent & Grenadines">St Vincent & Grenadines</option>
+                  <option value="Saipan">Saipan</option>
+                  <option value="Samoa">Samoa</option>
+                  <option value="Samoa American">Samoa American</option>
+                  <option value="San Marino">San Marino</option>
+                  <option value="Sao Tome & Principe">Sao Tome & Principe</option>
+                  <option value="Saudi Arabia">Saudi Arabia</option>
+                  <option value="Senegal">Senegal</option>
+                  <option value="Seychelles">Seychelles</option>
+                  <option value="Sierra Leone">Sierra Leone</option>
+                  <option value="Singapore">Singapore</option>
+                  <option value="Slovakia">Slovakia</option>
+                  <option value="Slovenia">Slovenia</option>
+                  <option value="Solomon Islands">Solomon Islands</option>
+                  <option value="Somalia">Somalia</option>
+                  <option value="South Africa">South Africa</option>
+                  <option value="Spain">Spain</option>
+                  <option value="Sri Lanka">Sri Lanka</option>
+                  <option value="Sudan">Sudan</option>
+                  <option value="Suriname">Suriname</option>
+                  <option value="Swaziland">Swaziland</option>
+                  <option value="Sweden">Sweden</option>
+                  <option value="Switzerland">Switzerland</option>
+                  <option value="Syria">Syria</option>
+                  <option value="Tahiti">Tahiti</option>
+                  <option value="Taiwan">Taiwan</option>
+                  <option value="Tajikistan">Tajikistan</option>
+                  <option value="Tanzania">Tanzania</option>
+                  <option value="Thailand">Thailand</option>
+                  <option value="Togo">Togo</option>
+                  <option value="Tokelau">Tokelau</option>
+                  <option value="Tonga">Tonga</option>
+                  <option value="Trinidad & Tobago">Trinidad & Tobago</option>
+                  <option value="Tunisia">Tunisia</option>
+                  <option value="Turkey">Turkey</option>
+                  <option value="Turkmenistan">Turkmenistan</option>
+                  <option value="Turks & Caicos Is">Turks & Caicos Is</option>
+                  <option value="Tuvalu">Tuvalu</option>
+                  <option value="Uganda">Uganda</option>
+                  <option value="United Kingdom">United Kingdom</option>
+                  <option value="Ukraine">Ukraine</option>
+                  <option value="United Arab Erimates">United Arab Emirates</option>
+                  <option value="United States of America">United States of America</option>
+                  <option value="Uraguay">Uruguay</option>
+                  <option value="Uzbekistan">Uzbekistan</option>
+                  <option value="Vanuatu">Vanuatu</option>
+                  <option value="Vatican City State">Vatican City State</option>
+                  <option value="Venezuela">Venezuela</option>
+                  <option value="Vietnam">Vietnam</option>
+                  <option value="Virgin Islands (Brit)">Virgin Islands (Brit)</option>
+                  <option value="Virgin Islands (USA)">Virgin Islands (USA)</option>
+                  <option value="Wake Island">Wake Island</option>
+                  <option value="Wallis & Futana Is">Wallis & Futana Is</option>
+                  <option value="Yemen">Yemen</option>
+                  <option value="Zaire">Zaire</option>
+                  <option value="Zambia">Zambia</option>
+                  <option value="Zimbabwe">Zimbabwe</option>
+              </select>
+              <select data-placeholder="Choose a Language...">
+                  <option value="AF">Afrikaans</option>
+                  <option value="SQ">Albanian</option>
+                  <option value="AR">Arabic</option>
+                  <option value="HY">Armenian</option>
+                  <option value="EU">Basque</option>
+                  <option value="BN">Bengali</option>
+                  <option value="BG">Bulgarian</option>
+                  <option value="CA">Catalan</option>
+                  <option value="KM">Cambodian</option>
+                  <option value="ZH">Chinese (Mandarin)</option>
+                  <option value="HR">Croatian</option>
+                  <option value="CS">Czech</option>
+                  <option value="DA">Danish</option>
+                  <option value="NL">Dutch</option>
+                  <option value="EN">English</option>
+                  <option value="ET">Estonian</option>
+                  <option value="FJ">Fiji</option>
+                  <option value="FI">Finnish</option>
+                  <option value="FR">French</option>
+                  <option value="KA">Georgian</option>
+                  <option value="DE">German</option>
+                  <option value="EL">Greek</option>
+                  <option value="GU">Gujarati</option>
+                  <option value="HE">Hebrew</option>
+                  <option value="HI">Hindi</option>
+                  <option value="HU">Hungarian</option>
+                  <option value="IS">Icelandic</option>
+                  <option value="ID">Indonesian</option>
+                  <option value="GA">Irish</option>
+                  <option value="IT">Italian</option>
+                  <option value="JA">Japanese</option>
+                  <option value="JW">Javanese</option>
+                  <option value="KO">Korean</option>
+                  <option value="LA">Latin</option>
+                  <option value="LV">Latvian</option>
+                  <option value="LT">Lithuanian</option>
+                  <option value="MK">Macedonian</option>
+                  <option value="MS">Malay</option>
+                  <option value="ML">Malayalam</option>
+                  <option value="MT">Maltese</option>
+                  <option value="MI">Maori</option>
+                  <option value="MR">Marathi</option>
+                  <option value="MN">Mongolian</option>
+                  <option value="NE">Nepali</option>
+                  <option value="NO">Norwegian</option>
+                  <option value="FA">Persian</option>
+                  <option value="PL">Polish</option>
+                  <option value="PT">Portuguese</option>
+                  <option value="PA">Punjabi</option>
+                  <option value="QU">Quechua</option>
+                  <option value="RO">Romanian</option>
+                  <option value="RU">Russian</option>
+                  <option value="SM">Samoan</option>
+                  <option value="SR">Serbian</option>
+                  <option value="SK">Slovak</option>
+                  <option value="SL">Slovenian</option>
+                  <option value="ES">Spanish</option>
+                  <option value="SW">Swahili</option>
+                  <option value="SV">Swedish </option>
+                  <option value="TA">Tamil</option>
+                  <option value="TT">Tatar</option>
+                  <option value="TE">Telugu</option>
+                  <option value="TH">Thai</option>
+                  <option value="BO">Tibetan</option>
+                  <option value="TO">Tonga</option>
+                  <option value="TR">Turkish</option>
+                  <option value="UK">Ukrainian</option>
+                  <option value="UR">Urdu</option>
+                  <option value="UZ">Uzbek</option>
+                  <option value="VI">Vietnamese</option>
+                  <option value="CY">Welsh</option>
+                  <option value="XH">Xhosa</option>
+                </select>
+              <select class="currency" selected disabled>
+                  <option value="cad">CAD</option>
+                  <option value="usd">USD</option>
+                  <option value="eur">EUR</option>
+                  <option value="gbp">GBP</option>
+                  <option value="ars">ARS</option>
+                  <option value="aud">AUD</option>
+                  <option value="bbd">BBD</option>
+                  </select>
+                  <button>Save</button>
+          </div>
+
+      </div>
+  </div>
+    <!-- shashank -->
+    <div id="tab_panel" class="maintain" style="margin-top: 20px;">
+           
+            
+      <form action="" id="tp1" style="display: block;">
+          <div style="display: flex;">
+              <input type="text" class="input-field" placeholder="&#xf3c5; Going to" style="border-radius: 7px;margin-left: 100px;width: 300px;" />
+              <input id="in" class="inputfield in1"  placeholder="&#xf783; Checkin"  name="datefilter" style="height: 50px;padding-right:none;border-radius: 7px;width: 150px;margin-left: 70px;" value=""/>
+              <input id="in" class="inputfield in1"  placeholder="&#xf783; Checkout"  name="datefilter2" style="height: 50px;padding-right:none;border-radius: 7px;width: 150px;margin-left: 70px;" value=""/>
+              <div style="width: 250px;height: 50px;border: 1px solid;align-items: center;margin-left: 70px;border-radius: 7px;display: flex;">
+                  <div style="padding-left: 20px;margin-top: 12px;"><i class="fa-solid fa-user"></i></div>
+                  <div style="padding-left: 8px;">
+                      <p>Travellers</p>
+                      <p style="line-height: 1px;">1room, 2travellers</p>
+                  </div>
+              </div>
+          </div>
+          <div style="display: flex; ">
+              <input type="checkbox" style="margin-top: 20px;margin-left: 100px;"/>
+              <p style="margin-top: 18px;margin-left: 10px;">Add a flight</p>
+              <input type="checkbox" style="margin-left: 130px;margin-top: 20px;"/>
+              <p style="margin-top: 18px;margin-left: 10px;">Add a Car</p>
+          </div>
+          <input type="submit" style="margin-left: 10%;width: 180px;height: 40px;border-radius: 8px;background-color: blue;color: white;"/>
+          
+      </form>
+      <form action="" id="tp2" style="display: none;">
+          <div width="100%" style="display: flex;">
+              <input type="text" class="input-field" placeholder="&#xf3c5; Leaving From" style="border-radius: 7px;margin-left: 100px;width: 250px;" />
+              <img style="width: 40px;height: 30px;overflow: none;margin-left: 10px;margin-top: 10px;" src="https://cdn2.iconfinder.com/data/icons/light-ui-icon-set-1/130/switch-512.png" alt="">
+              <input type="text" class="input-field" placeholder="&#xf3c5; Going to" style="border-radius: 7px;;width: 250px;" />
+              <input id="in" class="inputfield in1"  placeholder="&#xf783; Departure"  name="datefilter" style="height: 50px;padding-right:none;border-radius: 7px;width: 150px;margin-left: px;" value=""/>
+              <input id="in" class="inputfield in1"  placeholder="&#xf783; Returning"  name="datefilter2" style="height: 50px;padding-right:none;border-radius: 7px;width: 150px;margin-left: px;" value=""/>
+          </div>
+          
+          <input type="submit" style="margin-left: 40%;width: 180px;height: 40px;border-radius: 8px;background-color: blue;color: white;margin-top: 30px;"/>
+          
+      </form>
+  <!-- <form action="" class="input-icons">
+          
+            
+          <input type="text" class="input-field" placeholder="&#xf3c5; Going to" />
+      
+          <input  class="inputfield in1"  placeholder="&#xf783; Checkin"/>
+     
+          
+          <input type="date" class="inputfield in1" value="&#xf783; Checkout"/>
+
+          <input type="text" class="input-field in2" placeholder=" &#xf007;&#10;${nk}"></textarea>
+     
+          <br>
+          <div style="display: flex; ">
+              <input type="checkbox" style="margin-top: 20px;margin-left: 45px;"/>
+              <p style="margin-top: 18px;margin-left: 10px;">Add a flight</p>
+              <input type="checkbox" style="margin-left: 130px;margin-top: 20px;"/>
+              <p style="margin-top: 18px;margin-left: 10px;">Add a Car</p>
+          </div>
+          
+          
+          <br>
+          <input type="submit" style="margin-left: 40%;width: 180px;height: 40px;border-radius: 8px;background-color: blue;color: white;"/>
+  </form> -->
+  
+  <!-- <div>
+      <form action="">
+          <input type="text" class="a" width="35px" height="20px"/>
+          <input type="date" class="b"/>
+          <input type="date" class="c"/>
+          <input type="text" class="d"/>
+          <br>
+          <input type="checkbox" class="e"/>
+          <input type="checkbox" class="f"/>
+          <br>
+          <input type="submit" class="g">
+      </form>
+  </div>
+  <div>
+      <form action="">
+          <input type="text" class="a"/>
+          <input type="date" />
+          <input type="date" />
+          <input type="text" />
+          <br>
+          <input type="checkbox"/>
+          <input type="checkbox"/>
+          <br>
+          <input type="submit">
+      </form>
+  </div>
+  <div><form action="">
+      <input type="text" class="a"/>
+      <input type="date" />
+      <input type="date" />
+      <input type="text" />
+      <br>
+      <input type="checkbox"/>
+      <input type="checkbox"/>
+      <br>
+      <input type="submit">
+  </form></div>
+  <div>
+      <form action="">
+          <input type="text" class="a"/>
+          <input type="date" />
+          <input type="date" />
+          <input type="text" />
+          <br>
+          <input type="checkbox"/>
+          <input type="checkbox"/>
+          <br>
+          <input type="submit">
+      </form>
+  </div>-->
+</div> 
+</div>
+
+
+
+
+</body>
+</html>
+<script>
+var x = document.querySelector("#x")
+document.addEventListener("mouseup",function(event){
+if(event.target ==x) document.querySelector("#modal").style.display="none";
+
+})
+document.querySelector("#eng").addEventListener("click",dis);
+function dis(){
+document.querySelector("#modal").style.display="block"
+console.log(1)
+}
+
+// $(function() {
+// $('input[name="datetimes"]').daterangepicker({
+//     timePicker: true,
+//     startDate: moment().startOf('hour'),
+//     endDate: moment().startOf('hour').add(32, 'hour'),
+//     locale: {
+//     format: 'M/DD hh:mm A'
+//     }
+//    });
+// });
+$(function() {
+
+$('input[name="datefilter"]').daterangepicker({
+autoUpdateInput: false,
+locale: {
+  cancelLabel: 'Clear'
+}
+});
+
+$('input[name="datefilter"]').on('apply.daterangepicker', function(ev, picker) {
+$(this).val(picker.startDate.format('MM/DD/YYYY') );
+});
+
+$('input[name="datefilter"]').on('cancel.daterangepicker', function(ev, picker) {
+$(this).val('');
+});
+
+});
+
+
+
+$(function() {
+
+$('input[name="datefilter2"]').daterangepicker({
+autoUpdateInput: false,
+locale: {
+  cancelLabel: 'Clear'
+}
+});
+
+$('input[name="datefilter2"]').on('apply.daterangepicker', function(ev, picker) {
+$(this).val(picker.endDate.format('MM/DD/YYYY'));
+});
+
+$('input[name="datefilter2"]').on('cancel.daterangepicker', function(ev, picker) {
+$(this).val('');
+});
+
+});
+document.querySelector("#tp22").addEventListener("click",shownext)
+function shownext(){
+document.querySelector("#tp1").style.display="none";
+document.querySelector("#tp2").style.display="block";
+}
+document.querySelector(".staytab").addEventListener("click",showme)
+function showme(){
+document.querySelector("#tp2").style.display="none";
+document.querySelector("#tp1").style.display="block";
+}
+
+// document.querySelector("#dd").addEventListener("click",mymodal1);
+// var m = document.querySelector("#modal-container");
+// function mymodal1() {
+
+//    m.style.display="block";
+
+// }
+// // var mm = document.querySelector("#modal-container")
+// var mouse = document.querySelector("#menu");
+// var nn = document.querySelector("#sa")
+// window.addEventListener("mouseup",function(event){
+//     var buttone 
+//     if(event.currentTarget != mouse) mouse.style.display="none";
+// var x = false;
+// document.querySelector("#in").addEventListener("click",input);
+// function input(){
+//     x = true;
+//     return x;
+// }
+// if(input()){
+//     document.querySelector("#out").innerHTML="";
+//     var ma = document.querySelector("#in").value;
+//     console.log(ma);
+// }
+</script>
+
+      <!-- shashank -->
+    <div id="main">
+    
+    <h1>Ideas for your next trip</h1>
+    <div id="mamu">
+      <div style="width:60%;height:auto;box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;border-radius: 6px;">
+      <img style =" width:100%; height:70%;border-radius:6px ;" src="https://a.travel-assets.com/travel-assets-manager/8b9c5cbf-f527-49fb-b881-8d7037952a89/assurance_4_562x240-2x.jpg?impolicy=fcrop&w=600&h=257&q=medium">
+      <h2>Free cancelation on most hotels</h2>
+      <p>Because flexibility matters.</p>
+      </div>
+      
+      <div style="width:36%;height:auto;;">
+
+        <div style="width:auto;height:48%;box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;border-radius: 6px;;display:flex;">
+        <div style="height:auto;width:40%;">
+        <img height="100%" width="100%" src="https://a.travel-assets.com/travel-assets-manager/gmvd-1482-lmd-apac/lmd_113x168.jpg?impolicy=fcrop&w=300&h=300&q=mediumHigh">
+        </div>
+        <div style="height:auto;width:60%;">
+        <h3>Last minute deals are available</h3>
+        <p>Find your next gateway</p>
+        </div>
+        </div>
+        <div style="width:auto;height:48%;box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;border-radius: 6px; display:flex;" >
+          <div style="height:auto;width:40%;">
+          <img height="100%" width="100%" src="https://a.travel-assets.com/travel-assets-manager/gmvd-1482-review/generic_1_113x168.jpg?impolicy=fcrop&w=300&h=300&q=mediumHigh">
+          </div>
+          <div style="height:auto;width:60%;">
+          <h3>When you are ready to get away.We will be ready to inspire you</h3>
+          <p>Trip ideas and insperation</p>
+          <h3></h3>
+          </div>
+         
+        </div>
+      
+      </div>
+      
+    </div>
+    <h1>Explore, discover and save</h1>
+    <div id="backimg">
+        <p>Plan ahead</p>
+    </div>
+    
+    <div id="mobileimg">
+    <div style="height:100%;width:35%;">
+    <img  height="100%" width="100%" src="https://a.travel-assets.com/mad-service/header/takeover/expedia_marquee_refresh.jpg">
+    </div>
+    <div style="height:100%;width:50%;">
+      <h1>Plan your trip on a snap on the app</h1>
+      <p>From home or hammock, organise your entire escape and explore app offers</p> 
+      <h3>Text yourself a download link</h3>
+      <select style=" height:50px;
+      width:150px;
+      
+      margin-top: 20px;
+      border-radius: 8px;
+      font-size:20px ;
+       ">
+      
+      <option data-countryCode="DZ" value="213">Algeria (+213)</option>
+        <option data-countryCode="AD" value="376">Andorra (+376)</option>
+        <option data-countryCode="AO" value="244">Angola (+244)</option>
+        <option data-countryCode="AI" value="1264">Anguilla (+1264)</option>
+        <option data-countryCode="AG" value="1268">Antigua & Barbuda (+1268)</option>
+        <option data-countryCode="AR" value="54">Argentina (+54)</option>
+        <option data-countryCode="AM" value="374">Armenia (+374)</option>
+        <option data-countryCode="AW" value="297">Aruba (+297)</option>
+        <option data-countryCode="AU" value="61">Australia (+61)</option>
+        <option data-countryCode="AT" value="43">Austria (+43)</option>
+        <option data-countryCode="AZ" value="994">Azerbaijan (+994)</option>
+        <option data-countryCode="BS" value="1242">Bahamas (+1242)</option>
+        <option data-countryCode="BH" value="973">Bahrain (+973)</option>
+        <option data-countryCode="BD" value="880">Bangladesh (+880)</option>
+        <option data-countryCode="BB" value="1246">Barbados (+1246)</option>
+        <option data-countryCode="BY" value="375">Belarus (+375)</option>
+        <option data-countryCode="BE" value="32">Belgium (+32)</option>
+        <option data-countryCode="BZ" value="501">Belize (+501)</option>
+        <option data-countryCode="BJ" value="229">Benin (+229)</option>
+        <option data-countryCode="BM" value="1441">Bermuda (+1441)</option>
+        <option data-countryCode="BT" value="975">Bhutan (+975)</option>
+        <option data-countryCode="BO" value="591">Bolivia (+591)</option>
+        <option data-countryCode="BA" value="387">Bosnia Herzegovina (+387)</option>
+        <option data-countryCode="BW" value="267">Botswana (+267)</option>
+        <option data-countryCode="BR" value="55">Brazil (+55)</option>
+        <option data-countryCode="BN" value="673">Brunei (+673)</option>
+        <option data-countryCode="BG" value="359">Bulgaria (+359)</option>
+        <option data-countryCode="BF" value="226">Burkina Faso (+226)</option>
+        <option data-countryCode="BI" value="257">Burundi (+257)</option>
+        <option data-countryCode="KH" value="855">Cambodia (+855)</option>
+        <option data-countryCode="CM" value="237">Cameroon (+237)</option>
+        <option data-countryCode="CA" value="1">Canada (+1)</option>
+        <option data-countryCode="CV" value="238">Cape Verde Islands (+238)</option>
+        <option data-countryCode="KY" value="1345">Cayman Islands (+1345)</option>
+        <option data-countryCode="CF" value="236">Central African Republic (+236)</option>
+        <option data-countryCode="CL" value="56">Chile (+56)</option>
+        <option data-countryCode="CN" value="86">China (+86)</option>
+        <option data-countryCode="CO" value="57">Colombia (+57)</option>
+        <option data-countryCode="KM" value="269">Comoros (+269)</option>
+        <option data-countryCode="CG" value="242">Congo (+242)</option>
+        <option data-countryCode="CK" value="682">Cook Islands (+682)</option>
+        <option data-countryCode="CR" value="506">Costa Rica (+506)</option>
+        <option data-countryCode="HR" value="385">Croatia (+385)</option>
+        <option data-countryCode="CU" value="53">Cuba (+53)</option>
+        <option data-countryCode="CY" value="90392">Cyprus North (+90392)</option>
+        <option data-countryCode="CY" value="357">Cyprus South (+357)</option>
+        <option data-countryCode="CZ" value="42">Czech Republic (+42)</option>
+        <option data-countryCode="DK" value="45">Denmark (+45)</option>
+        <option data-countryCode="DJ" value="253">Djibouti (+253)</option>
+        <option data-countryCode="DM" value="1809">Dominica (+1809)</option>
+        <option data-countryCode="DO" value="1809">Dominican Republic (+1809)</option>
+        <option data-countryCode="EC" value="593">Ecuador (+593)</option>
+        <option data-countryCode="EG" value="20">Egypt (+20)</option>
+        <option data-countryCode="SV" value="503">El Salvador (+503)</option>
+        <option data-countryCode="GQ" value="240">Equatorial Guinea (+240)</option>
+        <option data-countryCode="ER" value="291">Eritrea (+291)</option>
+        <option data-countryCode="EE" value="372">Estonia (+372)</option>
+        <option data-countryCode="ET" value="251">Ethiopia (+251)</option>
+        <option data-countryCode="FK" value="500">Falkland Islands (+500)</option>
+        <option data-countryCode="FO" value="298">Faroe Islands (+298)</option>
+        <option data-countryCode="FJ" value="679">Fiji (+679)</option>
+        <option data-countryCode="FI" value="358">Finland (+358)</option>
+        <option data-countryCode="FR" value="33">France (+33)</option>
+        <option data-countryCode="GF" value="594">French Guiana (+594)</option>
+        <option data-countryCode="GA" value="241">Gabon (+241)</option>
+        <option data-countryCode="GM" value="220">Gambia (+220)</option>
+        <option data-countryCode="GE" value="7880">Georgia (+7880)</option>
+        <option data-countryCode="DE" value="49">Germany (+49)</option>
+        <option data-countryCode="GH" value="233">Ghana (+233)</option>
+        <option data-countryCode="GI" value="350">Gibraltar (+350)</option>
+        <option data-countryCode="GR" value="30">Greece (+30)</option>
+        <option data-countryCode="GL" value="299">Greenland (+299)</option>
+        <option data-countryCode="GD" value="1473">Grenada (+1473)</option>
+        <option data-countryCode="GP" value="590">Guadeloupe (+590)</option>
+        <option data-countryCode="GU" value="671">Guam (+671)</option>
+        <option data-countryCode="GT" value="502">Guatemala (+502)</option>
+        <option data-countryCode="GN" value="224">Guinea (+224)</option>
+        <option data-countryCode="GW" value="245">Guinea - Bissau (+245)</option>
+        <option data-countryCode="GY" value="592">Guyana (+592)</option>
+        <option data-countryCode="HT" value="509">Haiti (+509)</option>
+        <option data-countryCode="HN" value="504">Honduras (+504)</option>
+        <option data-countryCode="HK" value="852">Hong Kong (+852)</option>
+        <option data-countryCode="HU" value="36">Hungary (+36)</option>
+        <option data-countryCode="IS" value="354">Iceland (+354)</option>
+        <option data-countryCode="IN" value="91">India (+91)</option>
+        <option data-countryCode="ID" value="62">Indonesia (+62)</option>
+        <option data-countryCode="IR" value="98">Iran (+98)</option>
+        <option data-countryCode="IQ" value="964">Iraq (+964)</option>
+        <option data-countryCode="IE" value="353">Ireland (+353)</option>
+        <option data-countryCode="IL" value="972">Israel (+972)</option>
+        <option data-countryCode="IT" value="39">Italy (+39)</option>
+        <option data-countryCode="JM" value="1876">Jamaica (+1876)</option>
+        <option data-countryCode="JP" value="81">Japan (+81)</option>
+        <option data-countryCode="JO" value="962">Jordan (+962)</option>
+        <option data-countryCode="KZ" value="7">Kazakhstan (+7)</option>
+        <option data-countryCode="KE" value="254">Kenya (+254)</option>
+        <option data-countryCode="KI" value="686">Kiribati (+686)</option>
+        <option data-countryCode="KP" value="850">Korea North (+850)</option>
+        <option data-countryCode="KR" value="82">Korea South (+82)</option>
+        <option data-countryCode="KW" value="965">Kuwait (+965)</option>
+        <option data-countryCode="KG" value="996">Kyrgyzstan (+996)</option>
+        <option data-countryCode="LA" value="856">Laos (+856)</option>
+        <option data-countryCode="LV" value="371">Latvia (+371)</option>
+        <option data-countryCode="LB" value="961">Lebanon (+961)</option>
+        <option data-countryCode="LS" value="266">Lesotho (+266)</option>
+        <option data-countryCode="LR" value="231">Liberia (+231)</option>
+      </select>
+      
+      
+      
+      <input  placeholder="Phone number" style=" height:50px;
+      width:150px;
+      
+      margin-top: 20px;
+      border-radius: 8px;
+      font-size:20px ;
+       ">
+       
+      <button style="width:150px;
+      height:50px;
+        background-color: blue;
+        color:white;
+        border-radius: 8px;
+        font-size:20px ;"> Switch to app</button> 
+
+      <P>By providing your number, you agree to receive a one-time automated text message with a link to get the app. Standard text message rates may apply.
+      </P>
+    </div>
+  
+    <div style="height:100%;width:15%;">
+    <img height="60%" width="100%" src="https://tse4.mm.bing.net/th?id=OIP.7xGQKpUtezOy0cDWXQExxQHaHa&pid=Api&P=0&w=171&h=171">
+    <p>Scan the QR code</p>
+    </div>
+  </div>
+  <div style="height: 100px;width:100%;box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;border-radius: 6px;">
+  <h2>More trip options</h2>
+  <a href="Explore a world of travel in Expedia">Explore a world of travel in Expedia</a>
+  </div>
+  <div id="scrool">
+<div>
+  <h2>Hotel deals on domestic destinations</h2>
+  <a href="Nangi Hotels">Nangi Hotels</a>
+  <br>
+  
+  <a href="Mahabaleshwar Hotels">Mahabaleshwar Hotels</a>
+  <br>
+  <a href="Delhi Hotels">Delhi Hotels</a>
+  <br>
+  
+  <a href="Banglore Hotels">Banglore Hotels</a>
+  <br>
+  
+  <a href=" south Goa Hotels">South Goa Hotels</a>
+  <br>
+  <h2>Book hotels internationally</h2>
+  <a href=" maldives Hotels">Maldives Hotels</a>
+  <br>
+  <a href="Koh Samui Islands Hotels">Koh Samui Islands Hotels</a>
+<br>
+<a href="Bali Hotels">Bali Hotels</a>
+<br>
+<a href="Langkawi Hotels">Langkawi Hotels</a>
+<br>
+<a href="Phuket Hotels">Phuket Hotels</a>
+</div>
+<div>
+  <a href="Goa Hotels">Goa Hotels</a>
+  <br>
+  <a href="Kutta Hotels">Kutta Hotels</a>
+  <br>
+  <a href="Nandi Hills Hotels">Nandi Hills Hotels</a>
+  <br>
+  <a href="Ooty Hotels">Ooty Hotels</a>
+  <br>
+  <a href="Manali Hotels">Manali Hotels</a>
+  <br>
+  <a href="Dubai Hotels">Dubai Hotels</a>
+  <br>
+  <a href="Singapore Hotels">Singapore Hotels</a>
+  <br>
+  <a href="London Hotels">London Hotels</a>
+  <br>
+  <a href="Pattaya Hotels">Pattaya Hotels</a>
+  <br>
+  <a href="New York Hotels">New York Hotels</a>
+  <br>
+</div>
+
+  </div>
+  <div id="last">
+<div>
+  <br>
+  <img src="https://a.travel-assets.com/globalcontrols-service/content/f285fb631b0a976202ef57611c7050e9ef5ca51a/images/EG_Wordmark_blue_RGB.svg">
+</div>
+
+<div>
+  <h3>Company</h3>
+  <a href="About us">About us</a>
+  <br>
+  <br>
+  <a href="Jobs">Jobs</a>
+  <br>
+  <br>
+  <a href="List your property">List your property</a>
+  <br>
+  <br>
+  <a href="Partnerships">Partnerships</a>
+  <br>
+  <br>
+</div>
+<div>
+  <h3>Explore</h3>
+  <a href="India travel guide">India travel guide</a>
+  <br>
+  <br>
+  <a href="Hotels in India">Hotels in India</a>
+  <br>
+  <br>
+  <a href="Holiday rentals in India">Holiday rentals in India</a>
+  <br>
+  <br>
+  <a href="Holiday packages in India">Holiday packages in India</a>
+  <br>
+  <br>
+  <a href="Domestic flights">Domestic flights</a>
+  <br>
+  <br>
+  <a href="Car hire in India">Car hire in India</a>
+  <br>
+  <br>
+  <a href="All accommodation types">All accommodation types</a>
+  <br>
+  <br>
+  <a href="Travel blog">Travel blog</a>
+  <br>
+  <br>
+</div>
+
+<div>
+  <h3>Terms and policies</h3>
+  <a href="Privacy Statement">Privacy Statement</a>
+  <br>
+  <br>
+  <a href="Terms of use">Terms of use</a>
+  <br>
+  <br>
+  <a href="Vrbo terms and conditions">Vrbo terms and conditions</a>
+  <br>
+  <br>
+  </div>
+
+<div>
+  <h3>Help</h3>
+  <a href="Support">Support</a>
+  <br>
+  <br>
+  <a href="Change or cancel your booking">Change or cancel your booking</a>
+  <br>
+  <br>
+  <a href="Refund process and timelines">Refund process and timelines</a>
+  <br>
+  <br>
+  <a href="Book a flight using an airline credit">Book a flight using an airline credit</a>
+  <br>
+  <br>
+  <a href="International travel documents">International travel documents</a>
+<br>
+<br>
+
+</div>
+
+  </div>
+</div>
+  <hr style="border:1px solid black">
+  
+  <img style="display:block;margin: auto;" src="https://images.trvl-media.com/media/content/expind/images/sg/secure.png">
+<p style="font-size:13px;text-align:center">© 2022 Expedia, Inc., an Expedia Group company / Expedia Asia Holdings Mauritius / BEX Travel Asia Pte. Ltd. All rights reserved. Expedia and the Airplane Logo are trademarks or registered trademarks of Expedia, Inc.</p>
+</body>
+</html>
+<script>
+  var x = document.querySelector("#x")
+  document.addEventListener("mouseup",function(event){
+      if(event.target ==x) document.querySelector("#modal").style.display="none";
+      
+  })
+  document.querySelector("#eng").addEventListener("click",dis);
+  function dis(){
+      document.querySelector("#modal").style.display="block"
+      console.log(1)
+  }
+</script>
