@@ -25,10 +25,16 @@
 
   <!---------------->
 </head>
+<style>
+    .sha:hover{
+        cursor: pointer;
+        
+    }
+</style>
 <body>
     <div id="div1">
-        <div id="div11">
-            <img src="https://www.expedia.co.in/_dms/header/logo.svg?locale=en_GB&siteid=27&2">
+        <div id="div11"> 
+            <img class="sha" src="https://www.expedia.co.in/_dms/header/logo.svg?locale=en_GB&siteid=27&2">
             <div class="container">
                 <div class="dropdown dropleft">
                   <div  type="button" data-toggle="dropdown" id="mynormal">More travel  <i class="fa-solid fa-chevron-down"></i><span ></span></div>
@@ -996,3 +1002,12 @@ Expedia Partner Solutions (EPS) Egencia Business Travel Visa Assistance Trivago 
 
 </body>
 </html>
+<script > 
+   document.querySelector(".sha").addEventListener("click",mm)
+   function mm(){
+       window.location.href="homepage_shashank.html"
+   }
+
+   
+
+</script>

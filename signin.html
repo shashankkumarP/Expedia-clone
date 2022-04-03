@@ -87,11 +87,12 @@ p{
 .img2{
     margin-left: 9px;
 }
+
     </style>
 </head>
 <body>
     <div id="main">
-        <img src="https://www.expedia.com/_dms/interstitial/logo.svg?locale=en_US&siteid=1" />
+        <img class="p1" src="https://www.expedia.com/_dms/interstitial/logo.svg?locale=en_US&siteid=1" />
         
     </body>
     <form>
@@ -139,6 +140,10 @@ function myFun(){
     }
    
 }
+document.querySelector(".p1").addEventListener("click",mm)
+    function mm(){
+        window.location.href="homepage_shashank.html"
+    }
 
 
 </script>
