@@ -1203,8 +1203,8 @@
             hfirst.innerText=ele.Name;
             hfirst.style.marginLeft="20px"
             hfirst.setAttribute("id","sk");
-            hfirst.addEventListener("click",function(event){
-                next(event);
+            hfirst.addEventListener("click",function(){
+                nextl(ele);
             })
             var locate = document.createElement("h5");
             locate.innerText = ele.location;
@@ -1318,11 +1318,12 @@
     coutt.value = upper[upper.length-1].out;
     // next page data flow room selection
     var arrr=  JSON.parse(localStorage.getItem("prna")) || [];
-    function next(el){
+    function nextl(el){
         var a = el.Name;
         var b = el.price;
         var obj = {naam:a,daam:b};
         arrr.push(obj);
+        console.log(arrr)
         localStorage.setItem("prna",JSON.stringify(arrr));
         window.location.href="permission.html";
 

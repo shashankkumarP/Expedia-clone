@@ -445,7 +445,7 @@ button{
     </div>
     <div class="about">
         <div>
-            <p  class="p n">W Goa</p>
+            <h5  class="p" id="n">W Goa</h5>
             <p class="p11">4.2/5 Very good</p>
             <p class="p12">Guests rated this property 4.5/5 for cleanliness.</p>
             <p class="p13">See all 87 Reviews</p>
@@ -561,10 +561,10 @@ for(var i=0;i<x.length;i++){
     x[i].addEventListener("click",myFun)
 }
 function myFun(){
-    
+    window.location.href="payment.html";
 }
-var n1=JSON.parse(localStorage.getItem("prna"))
-var z=document.querySelector(".n")
+var n1= JSON.parse(localStorage.getItem("prna"))
+var z= document.querySelector("#n")
 z.innerHTML=n1[n1.length-1].naam
 
 

@@ -131,20 +131,21 @@ function myFun(){
     
     for(var i=0;i<data.length;i++){
         if(data[i].email==mail&&data[i].password==password){
-            window.location.href="group_alok.html"
+            window.location.href="homepage_shashank.html";
             break;
         }
         else{
             alert("incorrect password or userid");
         }
     }
+
    
 }
+document.querySelector("#p1").addEventListener("click",mm)
+function mm(){
+    window.location.href="homepage_shashank.html"
+}
 
-document.querySelector(".p1").addEventListener("click",mm)
-    function mm(){
-        window.location.href="homepage_shashank.html"
-    }
 
 
 </script>
