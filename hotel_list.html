@@ -6,6 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
 <script
       src="https://kit.fontawesome.com/24c494a6b6.js"
       crossorigin="anonymous"
@@ -29,10 +37,9 @@
         height: 30px;
 
     }
-    /* body {
-        padding-top: 0px;
-        line-height: 1px;
-    } */
+    body {
+       background-color: rgba(255, 255, 255, 0.747);
+    }
     
     #mynormal{
         
@@ -554,44 +561,42 @@
     .english,.tips,.support,.staytab,.img1button,.flighttab,.cut,.img1link:hover{
         cursor: pointer;
     }
-    
-    #last{
-        height:300px;
-         width:95%;
-         margin: auto;
-         
-         display:flex;
-        }
-    #last>div{
-        height:350px;
-        width:19%;
-        
-    }
-    #limage>div{
-            justify-content: center;
-    }
-    #last a{
-        font-size: small;
-        color: blue;
-        margin-top: 2px;
-        padding-left: 1px;
+    #imgg{
+        width: 40%;
+        height: 250px;
 
-        
     }
-    
-  
+    #txt{
+        width: 60%;
+        height: 250px;
+    }
+    /* #bottom{
+        border:1px solid green;
+    }
+    #bottom11{
+        border: 1px dotted;
+    }
+    #bottom22{
+        border: 1px solid red;
+    }
+    #top{
+        border: 1px solid;
+    } */
+    #sk:hover{
+        cursor: pointer;
+    }
 
  
 </style>
 <body>
     <div id="div1">
         <div id="div11">
-            <img class="expedia" src="https://www.expedia.co.in/_dms/header/logo.svg?locale=en_GB&siteid=27&2">
+            <img class="expedia ia" src="https://www.expedia.co.in/_dms/header/logo.svg?locale=en_GB&siteid=27&2">
             <div class="container">
                 <div class="dropdown dropleft">
                   <div  type="button" data-toggle="dropdown" id="mynormal">More travel  <i class="fa-solid fa-chevron-down"></i><span ></span></div>
                   <ul class="dropdown-menu dropdown-menu-left">
-                    <li><a href="stays.html"> <img class="i1" src="https://static.vecteezy.com/system/resources/thumbnails/000/353/557/small/Office__2871_29.jpg" alt="">Stays</a></li>
+                    <li><a href="#"> <img class="i1" src="https://static.vecteezy.com/system/resources/thumbnails/000/353/557/small/Office__2871_29.jpg" alt=""> Stays</a></li>
                     <li class="divider"></li>
                     <li><a href="#"><img class="im" src="https://cdn4.iconfinder.com/data/icons/aiga-symbol-signs/444/aiga_departingflights-512.png">Flight</a></li>
                     <li class="divider"></li>
@@ -602,8 +607,8 @@
                     <li><a href="#"><img class="i1" src="https://flyclipart.com/thumb2/ticket-icons-noun-project-411555.png" /> Holiday activities</a></li>
                     <li class="divider"></li>
                     <li><a href="#">Deals</a></li>
-                    <li><a href="group_alok.html">Group and Meetings</a></li>
-                    <li><a href="mobile.html">Mobiles</a></li>
+                    <li><a href="#">Group and Meetings</a></li>
+                    <li><a href="#">Mobiles</a></li>
                   </ul>
                 </div>
             </div>
@@ -981,287 +986,61 @@
 
         </div>
     </div>
-    
+    <div style="display: flex;margin-top: 20px;margin-bottom: 20px;height: 70px;width:80%;margin-left: 100px;">
+        <input type="text" class="input-field gto" placeholder="&#xf3c5; Going to" style="border-radius: 7px;width: 300px;margin-top: 7px;margin-left: 1px;" />
+        <input type="text"  class="inputfield  chin"  placeholder="&#xf783; Checkin"  style="height: 50px;padding-right:none;border-radius: 7px;width: 250px;margin-top: 7px;" />
+        <input type="text"  class="inputfield chou"  placeholder="&#xf783; Checkout"   style="height: 50px;padding-right:none;border-radius: 7px;width: 200px;margin-top: 7px;" />
+        <div style="width: 150px;height: 50px;border: 1px solid;align-items: center;border-radius: 7px;display: flex;margin-top: 7px;margin-left:10px;">
+            <div style="margin-top: 12px;"><i class="fa-solid fa-user"></i></div>
+            <div >
+                <p>Travellers</p>
+                <p style="line-height: 1px;">1room, 2travellers</p>
+            </div>
+        </div>
+        <input type="submit" style="width: 180px;height: 40px;border-radius: 8px;background-color: blue;color: white;margin-left:10px;margin-top: 12px;"/>
 
-
-    <!-- <div id="menu">
-        <ul>
-            <li id="aa" style="font-size: large;"><p>Members can access discounts and <br> special features</p></li>
-            <li id="aa"><button>signin</button></li>
-            <li style="text-align: center;"><a href="#">create a free account</a></li>
-            <li id="aa">List of favourate</li>
-            <li id="aa">Expedia Rewards</li>
+    </div>
+    <div style="display: flex;width: 80%;height: 70px;margin-left: 100px;background-color: rgb(4, 4, 99);color: white;border-radius: 7px;">
+        <div style="margin-top: 20px;margin-left: 20px;"><i class="fa-solid fa-triangle-exclamation"></i></div>
+        <div style="margin-left: 20px;margin-top: 12px;">
+            <div>Check covid19 restriction</div>
+            <div  style="display: flex;text-decoration: underline;">
+                <div>Find out more </div>
+                <div style="margin-left: 10px;text-decoration: underline;">dismiss</div>
+            </div>
+        </div>
+    </div>
+    <div style="width: 80%;height: 1200px;margin-left: 100px;display: flex;margin-top: 20px;">
+        <div style="width: 23%;height: 100%;border:1px solid;">
+            <img style="width:100%;height:150px" src="https://www.howtogeek.com/wp-content/uploads/2021/01/google-maps-satellite.png?height=200p&trim=2,2,2,2" alt="">
+            <p style="text-align: center;border-bottom-right-radius: 7px;border-bottom-left-radius: 7px;background-color:rgb(255, 255, 255);"><a href="#">view in map</a></p>
+            <br>
             <hr>
-            <li>Feedback</li>
-        </ul>
-    </div> -->
-    
-    <div id="div2">
-        <div id="tabu_main" style="margin-bottom: 1px;height: 30px;">
-            <h4 class="staytab">Stays</h4>
-            <h4 id="tp22" class="flighttab">Flight</h4>
-            <h4>Cars</h4>
-            <h4>Packages</h4>
-            <h4>Things to do</h4>
-            
+            <h5 style="margin-left:10px ;">Filter</h5>
+            <div id="filter" style="display: block; padding-left: 10px;">
+                <input type="radio" name="pay" value="paynow"/> paynow;
+                <br>
+                <input type="radio" name="pay" value="paylater"/> payletter;
+                <br>
+                <button style="width: 100px;height: 25px;background-color: blue;color: white;margin-top: 20px;" onclick="myfilter()">Filter</button> 
+            </div>
         </div>
-        <div style="width: 50%;display:block;margin: auto;line-height: 1px;margin-top: 1px;">
-            <hr >
-        </div>
-        
-        
-        
-        <div id="tab_panel" class="maintain" style="margin-top: 20px;">
-           
+        <div style="width: 70%;height: 100%;margin-left: 25px;">
+            <div style="display: flex;justify-content: space-around;" >
+                <p style=" margin-top: 15px;">see pick up some recommended properties <i class="fa-solid fa-circle-exclamation"></i></p>
+                <select style="width: 200px;height: 30px; margin-top: 15px;" name="sel" id="sort" onchange="pricesort()">
+                    <option value="">sort</option>
+                    <option value="lth">Price low to high</option>
+                    <option value="htl">Price high to low</option>
+                </select>
+            </div>
+            <div style="width: 100%;  " id="append" >
+            </div>
             
-                <form action="" id="tp1" style="display: block;">
-                    <div style="display: flex;">
-                        <input type="text" class="input-field gt" placeholder="&#xf3c5; Going to" style="border-radius: 7px;margin-left: 100px;width: 300px;" />
-                        <input id="in" class="inputfield in1 ci"  placeholder="&#xf783; Checkin"  name="datefilter" style="height: 50px;padding-right:none;border-radius: 7px;width: 150px;margin-left: 70px;" value=""/>
-                        <input id="in" class="inputfield in1 co"  placeholder="&#xf783; Checkout"  name="datefilter2" style="height: 50px;padding-right:none;border-radius: 7px;width: 150px;margin-left: 70px;" value=""/>
-                        <div style="width: 250px;height: 50px;border: 1px solid;align-items: center;margin-left: 70px;border-radius: 7px;display: flex;">
-                            <div style="padding-left: 20px;margin-top: 12px;"><i class="fa-solid fa-user"></i></div>
-                            <div style="padding-left: 8px;">
-                                <p>Travellers</p>
-                                <p style="line-height: 1px;">1room, 2travellers</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div style="display: flex; ">
-                        <input type="checkbox" style="margin-top: 20px;margin-left: 100px;"/>
-                        <p style="margin-top: 18px;margin-left: 10px;">Add a flight</p>
-                        <input type="checkbox" style="margin-left: 130px;margin-top: 20px;"/>
-                        <p style="margin-top: 18px;margin-left: 10px;">Add a Car</p>
-                    </div>
-                    <input type="submit" style="margin-left: 40%;width: 180px;height: 40px;border-radius: 8px;background-color: blue;color: white;"/>
-                    
-                </form>
-                <form action="" id="tp2" style="display: none;">
-                    <div style="display: flex;">
-                        <input type="text" class="input-field" placeholder="&#xf3c5; Leaving From" style="border-radius: 7px;margin-left: 100px;width: 250px;" />
-                        <img style="width: 40px;height: 30px;overflow: none;margin-left: 10px;margin-top: 10px;" src="https://cdn2.iconfinder.com/data/icons/light-ui-icon-set-1/130/switch-512.png" alt="">
-                        <input type="text" class="input-field" placeholder="&#xf3c5; Going to" style="border-radius: 7px;;width: 250px;" />
-                        <input id="in" class="inputfield in1"  placeholder="&#xf783; Departure"  name="datefilter" style="height: 50px;padding-right:none;border-radius: 7px;width: 150px;margin-left: 70px;" value=""/>
-                        <input id="in" class="inputfield in1"  placeholder="&#xf783; Returning"  name="datefilter2" style="height: 50px;padding-right:none;border-radius: 7px;width: 150px;margin-left: 70px;" value=""/>
-                    </div>
-                    
-                    <input type="submit" style="margin-left: 40%;width: 180px;height: 40px;border-radius: 8px;background-color: blue;color: white;margin-top: 30px;"/>
-                    
-                </form>
-            <!-- <form action="" class="input-icons">
-                    
-                      
-                    <input type="text" class="input-field" placeholder="&#xf3c5; Going to" />
 
-                
-                    <input  class="inputfield in1"  placeholder="&#xf783; Checkin"/>
-               
-                    
-                    <input type="date" class="inputfield in1" value="&#xf783; Checkout"/>
-    
-                    <input type="text" class="input-field in2" placeholder=" &#xf007;&#10;${nk}"></textarea>
-               
-                    <br>
-                    <div style="display: flex; ">
-                        <input type="checkbox" style="margin-top: 20px;margin-left: 45px;"/>
-                        <p style="margin-top: 18px;margin-left: 10px;">Add a flight</p>
-                        <input type="checkbox" style="margin-left: 130px;margin-top: 20px;"/>
-                        <p style="margin-top: 18px;margin-left: 10px;">Add a Car</p>
-                    </div>
-                    
-                    
-                    <br>
-                    <input type="submit" style="margin-left: 40%;width: 180px;height: 40px;border-radius: 8px;background-color: blue;color: white;"/>
-            </form> -->
-            
-            <!-- <div>
-                <form action="">
-                    <input type="text" class="a" width="35px" height="20px"/>
-                    <input type="date" class="b"/>
-                    <input type="date" class="c"/>
-                    <input type="text" class="d"/>
-                    <br>
-                    <input type="checkbox" class="e"/>
-                    <input type="checkbox" class="f"/>
-                    <br>
-                    <input type="submit" class="g">
-                </form>
-            </div>
-            <div>
-                <form action="">
-                    <input type="text" class="a"/>
-                    <input type="date" />
-                    <input type="date" />
-                    <input type="text" />
-                    <br>
-                    <input type="checkbox"/>
-                    <input type="checkbox"/>
-                    <br>
-                    <input type="submit">
-                </form>
-            </div>
-            <div><form action="">
-                <input type="text" class="a"/>
-                <input type="date" />
-                <input type="date" />
-                <input type="text" />
-                <br>
-                <input type="checkbox"/>
-                <input type="checkbox"/>
-                <br>
-                <input type="submit">
-            </form></div>
-            <div>
-                <form action="">
-                    <input type="text" class="a"/>
-                    <input type="date" />
-                    <input type="date" />
-                    <input type="text" />
-                    <br>
-                    <input type="checkbox"/>
-                    <input type="checkbox"/>
-                    <br>
-                    <input type="submit">
-                </form>
-            </div>-->
-        </div> 
-    </div>
-    <div class="div3">
-        <div id="div31"><img src="https://a.travel-assets.com/mad-service/footer/bnaBanners/BEX_Signin_650x514.jpg" /></div>
-        <div id="div32">
-            <h1>You could save 10% or more with <br> member only deals</h1>
-            <p>When you sign in, you’ll pay less with Member Prices and earn points on every booking <br> with Expedia Rewards</p>
-            <div id="d3">
-                <button class="img1button">sign in</button>
-                <a class="img1link" href="www.school.com">sign up</a>
-            </div>
-            
         </div>
-        
-    </div>
-    <div class="div3" id="bg1">
-        <div >
-            <h1>Save instantly with <br> Expedia Rewards</h1>
-            <p>You can enjoy access to perks like Member Prices.<br> saving you 10% or more on select hotels. Terms<br> may apply.</p>
-            <button>See Member prices</button>
-        </div>
-    </div>
-    <div id="div5">
-        <div>
-        </div>
-        <div id="div52">
-            <img src="https://tpc.googlesyndication.com/simgad/14931291218876135128?" alt="">
-            <h2>Welcome to Arabia</h2>
-            <p>Come on a journey that you never imagined</p>
-        </div>
-    </div>
-    <div id="div6">
-        <img src="https://tpc.googlesyndication.com/simgad/4352085177578628377?" alt="">
-    </div>
-    <div id="div7">
-        <div id="div71">
-            <div id="div711">
-                <div>Ad</div>
-                <div><img src="https://c.myholidays.com/images/Logo.png" alt=""></div>
-            </div>
-        </div>
-        <div id="div72">
-            <img src="https://tpc.googlesyndication.com/simgad/6349169426367407841?" alt="">
-        </div>
-    </div>
-    <h4>Explore a world of travel with Expedia</h4>
-    <p style="margin-top:10px;">Discover new places and experiences</p>
-    <div id="last" style="width: 90%;font-size: small;margin: auto;">
-        <div>
-            <br>
-            <img src="https://a.travel-assets.com/globalcontrols-service/content/f285fb631b0a976202ef57611c7050e9ef5ca51a/images/EG_Wordmark_blue_RGB.svg">
-        </div>
-    
-        <div>
-            <h3>Company</h3>
-            <a href="About us">About us</a>
-            <br>
-            <br>
-            <a href="Jobs">Jobs</a>
-            <br>
-            <br>
-            <a href="List your property">List your property</a>
-            <br>
-            <br>
-            <a href="Partnerships">Partnerships</a>
-            <br>
-            <br>
-        </div>
-        <div>
-            <h3>Explore</h3>
-            <a href="India travel guide">India travel guide</a>
-            <br>
-            <br>
-            <a href="Hotels in India">Hotels in India</a>
-            <br>
-            <br>
-            <a href="Holiday rentals in India">Holiday rentals in India</a>
-            <br>
-            <br>
-            <a href="Holiday packages in India">Holiday packages in India</a>
-            <br>
-            <br>
-            <a href="Domestic flights">Domestic flights</a>
-            <br>
-            <br>
-            <a href="Car hire in India">Car hire in India</a>
-            <br>
-            <br>
-            <a href="All accommodation types">All accommodation types</a>
-            <br>
-            
-            <a href="Travel blog">Travel blog</a>
-            <br>
-            <br>
-        </div>
-    
-        <div>
-            <h3>Terms and policies</h3>
-            <a href="Privacy Statement">Privacy Statement</a>
-            <br>
-            <br>
-            <a href="Terms of use">Terms of use</a>
-            <br>
-            <br>
-            <a href="Vrbo terms and conditions">Vrbo terms and conditions</a>
-            <br>
-            <br>
-        </div>
-    
-        <div>
-            <h3>Help</h3>
-            <a href="Support">Support</a>
-            <br>
-            <br>
-            <a href="#">Change or cancel your booking</a>
-            <br>
-            <br>
-            <a href="#">Refund process and timelines</a>
-            <br>
-            <br>
-            <a href="#">Book a flight using an airline credit</a>
-            <br>
-            <br>
-            <a href="#">International travel documents</a>
-            <br>
-            <br>
-    
-        </div>
-    
-    </div>
-    <hr style="border:1px solid black">
-    <div>
-        <img style="display:block;margin: auto;" src="https://images.trvl-media.com/media/content/expind/images/sg/secure.png">
-        <p style="font-size:13px;text-align:center;margin-bottom: 10px;">© 2022 Expedia, Inc., an Expedia Group company / Expedia Asia Holdings Mauritius / BEX Travel Asia Pte. Ltd. All rights reserved. Expedia and the Airplane Logo are trademarks or registered trademarks of Expedia, Inc.</p>
     </div>
 
-    
-    
 </body>
 </html>
 <script>
@@ -1275,120 +1054,290 @@
         document.querySelector("#modal").style.display="block"
         console.log(1)
     }
+        var goa=[ 
+        {
+        img:"https://a.travel-assets.com/media/meso_cm/PAPI/Images/hotels/70000000/69560000/69551900/69551801/dd25faec_b.jpg",
+        Name:"Fairfield by Marriott Goa Benaulim",
+        location:"Benaulim",
+        facility:"Effortlessly Romantic Beach Holiday ",
+        specialization:"Find the beauty of simplicity in South Goa. Fairfield by Marriott Goa Benaulim is minutes from the pure sands of Benaulim Beach.",
+        Rating:"4.3/5 Excellent (12 reviews)",
+        availability:"We have 5 left at",
+        price:"Rs 6999",
+        total_price:"Rs 7,839 total",
+        pay: "paylater"},
+    {
+        img:"https://a.travel-assets.com/media/meso_cm/PAPI/Images/hotels/16000000/15440000/15439200/15439133/f3d72764_b.jpg",
+        Name:" W Goa",
+        location:"Chapora",
+        facility:"Let's do breakfast",
+        specialization:"Includes Breakfast at the kitchen Table Kids Beloww 6 Eat & Stay For Free",
+        Rating:"4.2/5 Excellent (87 reviews)",
+        availability:"We have 5 left at",
+        price:"Rs 21095",
+        total_price:"Rs 24,892 total",
+        pay: "paylater"  
+    },
+    {
+        img:"https://a.travel-assets.com/media/meso_cm/PAPI/Images/hotels/61000000/60650000/60643100/60643033/ea553c30_b.jpg",
+        Name:"Holiday Inn Goa Candolim",
+        location:"Sinquerim",
+        facility:"null",
+        specialization:"null",
+        Rating:"3.0/5 Excellent (1 reviews)",
+        availability:"null",
+        price:"Rs 9025",
+        total_price:"Rs 10,650 total",
+        pay: "paylater"
+    },
+    {
+        img:"https://a.travel-assets.com/media/meso_cm/PAPI/Images/hotels/16000000/15520000/15518800/15518705/61ac74e1_b.jpg",
+        Name:"Fairfield by Marriott Goa Anjuna",
+        location:"Anjuna",
+        facility:"Experience Goa's Romantic Beach-Cation",
+        specialization:"Stay near Anjuna Beach.Rate inclusive of breakfast,complimentry wine,daily hotel credit of INR 500, access to the pool",
+        Rating:"5/5 Excellent (70 reviews)",
+        availability:"We have 5 left at",
+        price:"Rs 5349",
+        total_price:"Rs 5,991 total",  
+        pay: "paylater" 
+    },
+    {
+        img:"https://a.travel-assets.com/media/meso_cm/PAPI/Images/hotels/1000000/700000/697000/696977/52c154f9_b.jpg",
+        Name:"Holiday Inn Resort Goa,an IHG Hotel",
+        location:"Cavelossim",
+        facility:"Located on the Mobor Beach in South Goa",
+        specialization:"We offer a Private Beach,Free Wifi,OutdoorPool,Game room & Spa Villa.Unique Goan contemporary architecture",
+        Rating:"4.2/5 Very Good (151 reviews)",
+        availability:"We have 5 left at",
+        price:"Rs 11399",
+        total_price:"Rs 13,451 total",
+        pay: "paylater"
+    },
+    {
+        img:"https://images.trvl-media.com/hotels/1000000/20000/16500/16418/efa5ddde.jpg?impolicy=resizecrop&rw=455&ra=fit",
+        Name:"Taj Holiday Village Resort & Spa",
+        location:"Sinquerim",
+        facility:"null",
+        specialization:"null",
+        Rating:"4.3/5 Excellent ( reviews)",
+        availability:"We have 1 left at",
+        price:"Rs 16500",
+        total_price:"Rs 19,470 total",
+        pay: "paylater" 
+    },
+    {
+        img:"https://images.trvl-media.com/hotels/1000000/440000/438400/438378/bdbe16ac.jpg?impolicy=resizecrop&rw=455&ra=fit",
+        Name:"The Leela Goa",
+        location:"CAvelossim",
+        facility:"null",
+        specialization:"null",
+        Rating:"4.7/5 Excellent (495 reviews)",
+        availability:"We have 6 left at",
+        price:"Rs 28500",
+        total_price:"Rs 33,630 total",
+        pay:"paynow"
+    },
     
-    // $(function() {
-    // $('input[name="datetimes"]').daterangepicker({
-    //     timePicker: true,
-    //     startDate: moment().startOf('hour'),
-    //     endDate: moment().startOf('hour').add(32, 'hour'),
-    //     locale: {
-    //     format: 'M/DD hh:mm A'
-    //     }
-    //    });
-    // });
-    $(function() {
+    {
+        img:"https://images.trvl-media.com/hotels/1000000/670000/663700/663615/5bb5e9f8.jpg?impolicy=resizecrop&rw=455&ra=fit",
+        Name:" Taj Exotica Resort & Spa,Goa",
+        location:"Benaulim",
+        facility:"null",
+        specialization:"null",
+        Rating:"5/5 Excellent (280 reviews)",
+        availability:"We have 1 left at",
+        price:"Rs 18500",
+        total_price:"Rs 21,830 total",
+        pay:"paynow" 
+    },
+    {
+        img:"https://images.trvl-media.com/hotels/47000000/46210000/46205200/46205118/1583475f.jpg?impolicy=resizecrop&rw=455&ra=fit",
+        Name:"Taj Resort & Convention Centre,Goa",
+        location:"Dona Paula",
+        facility:"null",
+        specialization:"null",
+        Rating:"4.6/5 Wonderful (25 reviews)",
+        availability:" Member Price available",
+        price:"Rs 17400",
+        total_price:"Rs 20,532 total",
+        pay: "paynow"  
+    },
+    {
+        img:"https://images.trvl-media.com/hotels/1000000/530000/526400/526340/f5764d77.jpg?impolicy=resizecrop&rw=455&ra=fit",
+        Name:"Taj Fort Aguada Resort & Spa,Goa",
+        location:"null",
+        facility:"null",
+        specialization:"null",
+        Rating:"4.5/5 Wonderful (318 reviews)",
+        availability:"We have 4 left at",
+        price:"Rs 15500",
+        total_price:"Rs 18,290 total",
+        pay: "paynow"
+    }];
 
-    $('input[name="datefilter"]').daterangepicker({
-        autoUpdateInput: false,
-        locale: {
-            cancelLabel: 'Clear'
+    function display(goa) {
+        document.querySelector("#append").innerHTML="";
+        goa.map(function (ele,i){
+            var maind = document.createElement("div");
+            maind .style.display ="flex"
+            maind.style.boxShadow="rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;"
+            maind.style.marginBottom="5px"
+            maind.style.width="100%";
+            maind.style.height="250px"
+
+            var imgw = document.createElement("div");
+            imgw.setAttribute("id","imgg");
+            var txt = document.createElement("div")
+            txt.setAttribute("id","txt");
+            var im = document.createElement("img");
+            im.src=ele.img;
+            im.style.width="100%";
+            im.style.height="100%";
+            imgw.append(im);
+            var topdiv = document.createElement("div");
+            topdiv.style.height="150px";
+            topdiv.style.width="100%";
+            topdiv.setAttribute("id","top");
+            var hfirst = document.createElement("h3");
+            hfirst.innerText=ele.Name;
+            hfirst.style.marginLeft="20px"
+            hfirst.setAttribute("id","sk");
+            hfirst.addEventListener("click",function(event){
+                next(event);
+            })
+            var locate = document.createElement("h5");
+            locate.innerText = ele.location;
+            locate.style.marginLeft="20px"
+            var faci = document.createElement("h6");
+            faci.innerText = ele.facility;
+            faci.style.marginLeft="20px"
+            var pap = document.createElement("p");
+            pap.innerText = ele.specialization;
+            pap.style.marginLeft="20px"
+            topdiv.append(hfirst,locate,faci,pap);
+            var bottomdiv = document.createElement("div");
+            bottomdiv.style.width = "100%";
+            bottomdiv.style.height="100px";
+            bottomdiv.style.display="flex";
+            bottomdiv.style.marginTop="1px";
+            bottomdiv.style.lineHeight="1px"
+            bottomdiv.setAttribute("id","bottom")
+            var div1 = document.createElement("div");
+            div1.style.width="50%";
+            div1.style.height="100%";
+            div1.setAttribute("id","bottom11");
+            div1.style.paddingLeft="20px"
+            var payy =document.createElement("h5");
+            payy.innerText = ele.pay;
+            payy.style.lineHeight="1px"
+            
+            var rate = document.createElement("h5");
+            rate.innerText = ele.Rating;
+            // rate.style.marginTop="30px";
+            var ava = document.createElement("h5");
+            ava.innerText=ele.availability;
+            div1.append(payy,rate,ava);
+            
+            var div2 = document.createElement("div");
+            div2.setAttribute("id","bottom22")
+            div2.height="100%";
+            div2.width="50%";
+            div2.style.marginLeft="100px"
+            var pr = document.createElement("h3");
+            pr.innerText = ele.price;
+            pr.style.marginTop="22px"
+            var tpr = document.createElement("p");
+            tpr.innerText = ele.total_price;
+            div2.append(pr,tpr);
+            bottomdiv.append(div1,div2);
+            txt.append(topdiv,bottomdiv);
+            maind.append(imgw,txt);
+            document.querySelector("#append").append(maind);
+
+
+            
+
+        })
+    }
+    display(goa);
+    // Filter
+    function myfilter(){
+        var element = document.getElementsByName("pay");
+        var data;
+        for(var i=0;i<element.length;i++)
+        {
+            if(element[i].checked){
+                  data = goa.filter(function(el){
+                    if(el.pay==element[i].value) return el
+                })
+                display(data);
+            }
         }
-    });
-
-    $('input[name="datefilter"]').on('apply.daterangepicker', function(ev, picker) {
-        $(this).val(picker.startDate.format('MM/DD/YYYY') );
-    });
-
-    $('input[name="datefilter"]').on('cancel.daterangepicker', function(ev, picker) {
-        $(this).val('');
-    });
-
-    });
-
-
-
-    $(function() {
-
-    $('input[name="datefilter2"]').daterangepicker({
-        autoUpdateInput: false,
-        locale: {
-            cancelLabel: 'Clear'
-        }
-    });
-
-    $('input[name="datefilter2"]').on('apply.daterangepicker', function(ev, picker) {
-        $(this).val(picker.endDate.format('MM/DD/YYYY'));
-    });
-
-    $('input[name="datefilter2"]').on('cancel.daterangepicker', function(ev, picker) {
-        $(this).val('');
-    });
-
-    });
-    document.querySelector("#tp22").addEventListener("click",shownext)
-    function shownext(){
-        document.querySelector("#tp1").style.display="none";
-        document.querySelector("#tp2").style.display="block";
     }
-    document.querySelector(".staytab").addEventListener("click",showme)
-    function showme(){
-        document.querySelector("#tp2").style.display="none";
-        document.querySelector("#tp1").style.display="block";
-    }
-
-
-    var datatravel = JSON.parse(localStorage.getItem("trav")) || [];
-    document.querySelector("#tp1").addEventListener("submit",transfer1);
-
-    function transfer1(){
-        event.preventDefault();
-        var goingto = document.querySelector(".gt").value;
-        var checkinm = document.querySelector(".ci").value;
-        var checkoutm = document.querySelector(".co").value;
-        console.log(goingto,checkinm,checkoutm)
-        var obj ={goo:goingto,check:checkinm,out:checkoutm};
-        datatravel.push(obj);
-        localStorage.setItem("trav",JSON.stringify(datatravel));
-        window.location.href="hotel_list.html";
-    }
-
-    document.querySelector(".support").addEventListener("click",mmm)
-    function mmm() {
-        window.location.href="demo.html";
-    }
+    // sort
     
-    document.querySelector("#side1").addEventListener("click",mmm2)
-    function mmm2() {
-        window.location.href="signin.html";
+    function pricesort(){
+            var val = document.querySelector("#sort").value;
+           
+            if(val=="lth"){
+            
+                goa.sort(function(a,b){
+                    
+                    return Number(a.price.split(" ")[1])- Number(b.price.split(" ")[1]);
+                    
+                
+
+                })
+            
+                display(goa);
+                console.log("a")
+            }
+            else if(val=="htl")
+            {
+                goa.sort(function(a,b){
+                    return Number(b.price.split(" ")[1])- Number(a.price.split(" ")[1]);
+                })
+                display(goa);
+                console.log("b");
+            }
+           
+            else{
+                display(goa);
+                console.log("c");
+            }
     }
-    document.querySelector(".expedia").addEventListener("click",mmm3)
-    function mmm3(){
+    // data flow
+    var upper = JSON.parse(localStorage.getItem("trav"));
+
+    var cm = document.querySelector(".gto");
+    cm.value=upper[upper.length-1].goo;
+    var cinn = document.querySelector(".chin");
+    cinn.value= upper[upper.length-1].check;
+    var coutt = document.querySelector(".chou");
+    coutt.value = upper[upper.length-1].out;
+    // next page data flow room selection
+    var arrr=  JSON.parse(localStorage.getItem("prna")) || [];
+    function next(el){
+        var a = el.Name;
+        var b = el.price;
+        var obj = {naam:a,daam:b};
+        arrr.push(obj);
+        localStorage.setItem("prna",JSON.stringify(arrr));
+        window.location.href="permission.html";
+
+    }
+    document.querySelector(".ia").addEventListener("click",mmm5)
+    function mmm5(){
         window.location.href="homepage_shashank.html";
     }
 
+
+
     
-    // document.querySelector("#dd").addEventListener("click",mymodal1);
-    // var m = document.querySelector("#modal-container");
-    // function mymodal1() {
-       
-    //    m.style.display="block";
-        
-    // }
-    // // var mm = document.querySelector("#modal-container")
-    // var mouse = document.querySelector("#menu");
-    // var nn = document.querySelector("#sa")
-    // window.addEventListener("mouseup",function(event){
-    //     var buttone 
-    //     if(event.currentTarget != mouse) mouse.style.display="none";
-    // var x = false;
-    // document.querySelector("#in").addEventListener("click",input);
-    // function input(){
-    //     x = true;
-    //     return x;
-    // }
-    // if(input()){
-    //     document.querySelector("#out").innerHTML="";
-    //     var ma = document.querySelector("#in").value;
-    //     console.log(ma);
-    // }
+
+
+
+
+    
 </script>
