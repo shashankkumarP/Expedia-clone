@@ -1,0 +1,65 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #payment{
+            height: 400px;
+            width: 40%;
+            
+            margin: auto;
+            margin-top: 200px;
+        }
+        p{
+            text-align: center;
+            font-size: 30px;
+            font-weight: bolder;
+        }
+        input{
+            height: 40px;
+            width: 60%;
+            margin-bottom: 10px;
+            margin-left: 40px;
+        }
+        .pay{
+            background-color: blue;
+            color: aliceblue;
+        }
+    </style>
+    
+</head>
+<body>
+    <form >
+
+<div id ="payment">
+    <p>Enter your payment details</p>
+    <input type="text" placeholder="Name on card"><input type="number" placeholder="Card number"><input type="number" placeholder="Expiry date"><input class="otp" type="password" placeholder="Security code">
+
+<input  class=" pay"type="submit" value="click to pay">
+</div>
+
+
+
+    </form>
+</body>
+</html>
+    <script>
+document.querySelector("form").addEventListener("submit",myFun)
+
+function myFun(){
+    event.preventDefault();
+    var x=  document.querySelector(".otp").value
+  if(x=="1234"){
+      window.location.href="ok.html"
+  }
+  else{
+      window.location.href="not.html"
+  }
+
+
+}
+    </script>
