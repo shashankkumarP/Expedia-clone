@@ -358,12 +358,15 @@ button{
     background-color: blue;
     color: aliceblue;
 }
+.p1:hover{
+    cursor: pointer;
+}
     </style>
 </head>
 <body>
     <div class="top_div">
         <div class="div1">
-            <img class="p1"src="https://www.expedia.co.in/_dms/header/logo.svg?locale=en_GB&siteid=27" />
+            <img class="p1" src="https://www.expedia.co.in/_dms/header/logo.svg?locale=en_GB&siteid=27" />
         </div>
         <div class="div2">
             <select >
@@ -547,6 +550,10 @@ button{
 </body>
 </html>
 <script>
+    document.querySelector(".p1").addEventListener("click",mm22)
+    function mm22(){
+        window.location.href="homepage_shashank.html"
+    }
 
 var x=document.querySelectorAll("button")
 
@@ -559,4 +566,6 @@ function myFun(){
 var n1= JSON.parse(localStorage.getItem("prna"))
 var z= document.querySelector("#n")
 z.innerHTML=n1[n1.length-1].naam
+
+
 </script>
