@@ -4,7 +4,7 @@
 Clone Expedia.co.in
 
 Here in this project we have tried to clone expedia.co.in
-It is basically a travel booking site, Where we can book flight hotels and cars for travelling and staying purpose.
+Expedia is  basically a travel booking site, Where we can book flight hotels and cars for travelling and staying purpose.
  
 ## Acknowledgements
 
